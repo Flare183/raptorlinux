@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <General>
+    <LoadLastProject>true</LoadLastProject>
+    <ShowFullFilePath>true</ShowFullFilePath>
+    <DefaultLanguage d3p1:type="JavaLanguage" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <DisplayLanguage>[Default]</DisplayLanguage>
+    <RecentFiles />
+  </General>
+  <Diagram>
+    <DiagramWidth>5000</DiagramWidth>
+    <DiagramHeight>4000</DiagramHeight>
+    <UsePrecisionSnapping>true</UsePrecisionSnapping>
+    <ShowChevron>AsNeeded</ShowChevron>
+    <ShowType>true</ShowType>
+    <ShowParameters>true</ShowParameters>
+    <ShowParameterNames>true</ShowParameterNames>
+    <ShowInitialValue>true</ShowInitialValue>
+  </Diagram>
+  <CodeGenerator>
+    <CSharpImportList>
+      <Value>System</Value>
+      <Value>System.Xml</Value>
+      <Value>System.Collections.Generic</Value>
+    </CSharpImportList>
+    <JavaImportList>
+      <Value>java.io.*</Value>
+      <Value>java.util.*</Value>
+    </JavaImportList>
+    <IndentSize>4</IndentSize>
+    <UseTabsForIndents>true</UseTabsForIndents>
+  </CodeGenerator>
+</Settings>

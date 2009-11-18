@@ -1,0 +1,7 @@
+C:\d\my documents\Visual Studio 2008\Projects\raptor\dotnetgraph\bin\Debug\dotnetgraph.dll
+C:\d\my documents\Visual Studio 2008\Projects\raptor\dotnetgraph\bin\Debug\dotnetgraph.pdb
+C:\d\my documents\Visual Studio 2008\Projects\raptor\dotnetgraph\obj\Debug\ResolveAssemblyReference.cache
+C:\d\my documents\Visual Studio 2008\Projects\raptor\dotnetgraph\obj\Debug\dotnetgraphlibrary.dotnetgraph.resources
+C:\d\my documents\Visual Studio 2008\Projects\raptor\dotnetgraph\obj\Debug\dotnetgraph.csproj.GenerateResource.Cache
+C:\d\my documents\Visual Studio 2008\Projects\raptor\dotnetgraph\obj\Debug\dotnetgraph.dll
+C:\d\my documents\Visual Studio 2008\Projects\raptor\dotnetgraph\obj\Debug\dotnetgraph.pdb
