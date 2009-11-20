@@ -1,0 +1,42 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.DebuggingService>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService>
+  <MonoDevelop.Ide.Workbench ctype="Workbench">
+    <Files>
+      <File FileName="Core/ProjectCore.cs" Line="850" Column="56" />
+      <File FileName="Plugins.cs" Line="960" Column="31" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Core" expanded="True">
+            <Node name="ProjectCore.cs" selected="True" />
+          </Node>
+          <Node name="raptor" expanded="True">
+            <Node name="References" expanded="True">
+              <Node name="interpreter, Version=0.0.0.0, Culture=neutral" expanded="True" />
+              <Node name="mgnat, Version=3.2.0.0, Culture=neutral, PublicKeyToken=713d0175fa8fbef8, processorArchitecture=MSIL" expanded="True" />
+              <Node name="mgnatcs, Version=3.2.0.0, Culture=neutral, PublicKeyToken=713d0175fa8fbef8, processorArchitecture=MSIL" expanded="True" />
+              <Node name="microsoft.ink, Version=1.7.2600.2180, Culture=neutral, PublicKeyToken=31bf3856ad364e35" expanded="True" />
+              <Node name="Plugins_PlaySound, Version=1.0.1433.27897, Culture=neutral" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True">
+          <Node name="raptor" expanded="True">
+            <Node name="raptor" expanded="True">
+              <Node name="raptor.Runtime" expanded="True">
+                <Node name="raptor.Runtime.Variable_Kind" expanded="True" />
+                <Node name="add_at_front_delegate" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
