@@ -1,0 +1,52 @@
+<Combine fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="raptor" configuration="Debug" />
+      <Entry build="True" name="GeneratorAda" configuration="Debug" />
+      <Entry build="True" name="dotnetgraph" configuration="Debug" />
+      <Entry build="True" name="CodeGenerator" configuration="Debug" />
+      <Entry build="True" name="Core" configuration="Debug" />
+      <Entry build="True" name="CSharp" configuration="Debug" />
+      <Entry build="True" name="GUI" configuration="Debug" />
+      <Entry build="True" name="GUI.Diagram" configuration="Debug" />
+      <Entry build="True" name="Java" configuration="Debug" />
+      <Entry build="True" name="Translations" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="raptor" configuration="Release" />
+      <Entry build="True" name="GeneratorAda" configuration="Release" />
+      <Entry build="True" name="dotnetgraph" configuration="Release" />
+      <Entry build="True" name="CodeGenerator" configuration="Release" />
+      <Entry build="True" name="Core" configuration="Release" />
+      <Entry build="True" name="CSharp" configuration="Release" />
+      <Entry build="True" name="GUI" configuration="Release" />
+      <Entry build="True" name="GUI.Diagram" configuration="Release" />
+      <Entry build="True" name="Java" configuration="Release" />
+      <Entry build="True" name="Translations" configuration="Release" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="raptor" single="True">
+    <Execute type="None" entry="raptor" />
+    <Execute type="None" entry="GeneratorAda" />
+    <Execute type="None" entry="dotnetgraph" />
+    <Execute type="None" entry="CodeGenerator" />
+    <Execute type="None" entry="Core" />
+    <Execute type="None" entry="CSharp" />
+    <Execute type="None" entry="GUI" />
+    <Execute type="None" entry="GUI.Diagram" />
+    <Execute type="None" entry="Java" />
+    <Execute type="None" entry="Translations" />
+  </StartMode>
+  <Entries>
+    <Entry filename="raptor.mdp" />
+    <Entry filename="GeneratorAda/GeneratorAda.mdp" />
+    <Entry filename="dotnetgraph/dotnetgraph.mdp" />
+    <Entry filename="CodeGenerator/CodeGenerator.mdp" />
+    <Entry filename="Core/Core.mdp" />
+    <Entry filename="CSharp/CSharp.mdp" />
+    <Entry filename="GUI/GUI.mdp" />
+    <Entry filename="GUI.Diagram/GUI.Diagram.mdp" />
+    <Entry filename="Java/Java.mdp" />
+    <Entry filename="Translations/Translations.mdp" />
+  </Entries>
+</Combine>

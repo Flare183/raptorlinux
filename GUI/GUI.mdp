@@ -1,0 +1,52 @@
+<Project releaseversion="0.1" name="GUI" fileversion="2.0" language="C#" DefaultNamespace="NClass.GUI" Configuration="Debug" Platform="AnyCPU" AssemblyName="NClass" StartupObject="NClass.GUI.Program" ApplicationIcon="nclass.ico" FileUpgradeFlags="" OldToolsVersion="2.0" UpgradeBackupLocation="" targetFramework="2.0" ctype="DotNetProject">
+  <Configurations active="Debug">
+    <Configuration name="Debug" Optimize="false" DefineConstants="DEBUG;TRACE" WarningLevel="4" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Debug/" assembly="NClass" />
+      <Build debugmode="True" target="WinExe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" Optimize="true" DefineConstants="TRACE" WarningLevel="4" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Release/" assembly="NClass" />
+      <Build debugmode="False" target="WinExe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="TRACE" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="Dialogs/DiagramSizeDialog.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="Dialogs/DiagramSizeDialog.designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/GUI/Dialogs/DiagramSizeDialog.cs" />
+    <File name="Dialogs/AboutDialog.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="Dialogs/AboutDialog.Designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/GUI/Dialogs/AboutDialog.cs" />
+    <File name="MainForm.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="MainForm.Designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/GUI/MainForm.cs" />
+    <File name="Dialogs/OptionsDialog.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="Dialogs/OptionsDialog.Designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/GUI/Dialogs/OptionsDialog.cs" />
+    <File name="Program.cs" subtype="Code" buildaction="Compile" />
+    <File name="Dialogs/DiagramSizeDialog.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/GUI/Dialogs/DiagramSizeDialog.cs" resource_id="NClass.GUI.DiagramSizeDialog.resources" />
+    <File name="Dialogs/AboutDialog.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/GUI/Dialogs/AboutDialog.cs" resource_id="NClass.GUI.AboutDialog.resources" />
+    <File name="Dialogs/OptionsDialog.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/GUI/Dialogs/OptionsDialog.cs" resource_id="NClass.GUI.OptionsDialog.resources" />
+    <File name="MainForm.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/GUI/MainForm.cs" resource_id="NClass.GUI.MainForm.resources" />
+    <File name="Properties/Resources.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" generator="ResXFileCodeGenerator" resource_id="NClass.GUI.Properties.Resources.resources" />
+    <File name="Properties/Resources.Designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/GUI/Properties/Resources.resx" />
+    <File name="Properties/Settings.Designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/GUI/Properties/Settings.settings" />
+    <File name="Settings.cs" subtype="Code" buildaction="Compile" />
+    <File name="UpdatesChecker.cs" subtype="Code" buildaction="Compile" />
+    <File name="ZoomingToolStrip.cs" subtype="Code" contentType="Component" buildaction="Compile" />
+    <File name="app.config" subtype="Code" buildaction="Nothing" />
+    <File name="Properties/Settings.settings" subtype="Code" buildaction="Nothing" generator="SettingsSingleFileGenerator" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Project" localcopy="True" refto="CodeGenerator" />
+    <ProjectReference type="Project" localcopy="True" refto="Core" />
+    <ProjectReference type="Project" localcopy="True" refto="CSharp" />
+    <ProjectReference type="Project" localcopy="True" refto="Diagram" />
+    <ProjectReference type="Project" localcopy="True" refto="Java" />
+    <ProjectReference type="Project" localcopy="True" refto="Translations" />
+  </References>
+  <LanguageParameters StartupObject="NClass.GUI.Program" ApplicationIcon="nclass.ico" ctype="CSharpProjectParameters" />
+</Project>

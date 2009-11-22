@@ -1,0 +1,28 @@
+<Project releaseversion="0.1" name="Translations" fileversion="2.0" language="C#" DefaultNamespace="NClass.Translations" Configuration="Debug" Platform="AnyCPU" AssemblyName="NClass.Translations" FileUpgradeFlags="" OldToolsVersion="2.0" UpgradeBackupLocation="" targetFramework="2.0" ctype="DotNetProject">
+  <Configurations active="Debug">
+    <Configuration name="Debug" Optimize="false" DefineConstants="DEBUG;TRACE" WarningLevel="4" DocumentationFile="" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Debug/" assembly="NClass.Translations" />
+      <Build debugmode="True" target="Library" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" Optimize="true" DefineConstants="TRACE" WarningLevel="4" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Release/" assembly="NClass.Translations" />
+      <Build debugmode="False" target="Library" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="TRACE" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="Strings.cs" subtype="Code" buildaction="Compile" />
+    <File name="Strings.es.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" resource_id="NClass.Translations.Strings.es.resources" />
+    <File name="Strings.hu.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" resource_id="NClass.Translations.Strings.hu.resources" />
+    <File name="Strings.pt-BR.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" resource_id="NClass.Translations.Strings.pt-BR.resources" />
+    <File name="Strings.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" resource_id="NClass.Translations.Strings.resources" />
+    <File name="Strings.ru.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" resource_id="NClass.Translations.Strings.ru.resources" />
+    <File name="Properties" subtype="Directory" buildaction="Nothing" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </References>
+</Project>

@@ -1,0 +1,433 @@
+<Project releaseversion="0.1" name="raptor" fileversion="2.0" newfilesearch="OnLoad" language="C#" DefaultNamespace="raptor" ProjectType="Local" SccProjectName="" SccLocalPath="" SccAuxPath="" SccProvider="" Configuration="Debug" Platform="AnyCPU" ApplicationIcon="App.ico" AssemblyKeyContainerName="" AssemblyName="raptor" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" RunPostBuildEvent="OnBuildSuccess" FileUpgradeFlags="" UpgradeBackupLocation="" OldToolsVersion="2.0" TargetFrameworkVersion="v2.0" StartupObject="raptor.Visual_Flow_Form" CodePage="65001" targetFramework="2.0" ctype="DotNetProject">
+  <Configurations active="Debug">
+    <Configuration name="Debug" BaseAddress="285212672" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" FileAlignment="4096" Optimize="false" RegisterForComInterop="false" RemoveIntegerChecks="false" WarningLevel="4" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Debug/" assembly="raptor" />
+      <Build debugmode="True" target="WinExe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" BaseAddress="285212672" ConfigurationOverrideFile="" DefineConstants="TRACE" DocumentationFile="" FileAlignment="4096" Optimize="true" RegisterForComInterop="false" RemoveIntegerChecks="false" WarningLevel="4" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Release/" assembly="raptor" />
+      <Build debugmode="False" target="WinExe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="TRACE" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="ada_runtime.adb" subtype="Code" buildaction="Nothing" />
+    <File name="ada_runtime.ads" subtype="Code" buildaction="Nothing" />
+    <File name="app.config" subtype="Code" buildaction="Nothing" />
+    <File name="generate_interface.ads" subtype="Code" buildaction="Nothing" />
+    <File name="generate_interface_oo.ads" subtype="Code" buildaction="Nothing" />
+    <File name="Help/#BSSC" subtype="Code" buildaction="Nothing" />
+    <File name="Help/calls_v_functions.rap" subtype="Code" buildaction="Nothing" />
+    <File name="Help/calls_v_functions.rap.backup0" subtype="Code" buildaction="Nothing" />
+    <File name="Help/calls_v_functions.rap.backup1" subtype="Code" buildaction="Nothing" />
+    <File name="Help/freeze_demo.rap" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.akw" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.ali" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.BRS" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.chm" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.doc" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.err" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.hhc" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.hhc_backup" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.hhk" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.hhk_backup" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.hhp" subtype="Code" buildaction="Nothing" />
+    <File name="Help/RAPTORHELP.HLP" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.hpj" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.hpr" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.hpt" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.kkw" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.mpj" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.ppf" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.qwm" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.rbh" subtype="Code" buildaction="Nothing" />
+    <File name="Help/raptorhelp.rtf" subtype="Code" buildaction="Nothing" />
+    <File name="Help/tutorial1.rap" subtype="Code" buildaction="Nothing" />
+    <File name="Help/tutorial2.rap" subtype="Code" buildaction="Nothing" />
+    <File name="Help/tutorial3.rap" subtype="Code" buildaction="Nothing" />
+    <File name="Help/x.bat" subtype="Code" buildaction="Nothing" />
+    <File name="interpreter.adb" subtype="Code" buildaction="Nothing" />
+    <File name="interpreter.ads" subtype="Code" buildaction="Nothing" />
+    <File name="lexer.adb" subtype="Code" buildaction="Nothing" />
+    <File name="lexer.ads" subtype="Code" buildaction="Nothing" />
+    <File name="numbers.adb" subtype="Code" buildaction="Nothing" />
+    <File name="numbers.ads" subtype="Code" buildaction="Nothing" />
+    <File name="parser.adb" subtype="Code" buildaction="Nothing" />
+    <File name="parser.ads" subtype="Code" buildaction="Nothing" />
+    <File name="parse_tree.adb" subtype="Code" buildaction="Nothing" />
+    <File name="parse_tree.ads" subtype="Code" buildaction="Nothing" />
+    <File name="pub.key" subtype="Code" buildaction="Nothing" />
+    <File name="Raptor.chm" subtype="Code" buildaction="Nothing" />
+    <File name="raptor_files.adb" subtype="Code" buildaction="Nothing" />
+    <File name="raptor_files.ads" subtype="Code" buildaction="Nothing" />
+    <File name="Reports.xls" subtype="Code" buildaction="Nothing" />
+    <File name="suggestions.adb" subtype="Code" buildaction="Nothing" />
+    <File name="suggestions.ads" subtype="Code" buildaction="Nothing" />
+    <File name="App.ico" subtype="Code" buildaction="Exclude" />
+    <File name="class.png" subtype="Code" buildaction="Exclude" />
+    <File name="CodeProjectComBigIntegerPackage.dll" subtype="Code" buildaction="Exclude" />
+    <File name="COMgraph.dll" subtype="Code" buildaction="Exclude" />
+    <File name="composition.png" subtype="Code" buildaction="Exclude" />
+    <File name="COPY.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="CUT.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="GUI/Resources/aggregation1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/align_bottom1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/align_horizontal1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/align_left1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/align_right1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/align_top1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/align_vertical1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/association1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/auto_layout1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/auto_zoom1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/class1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/code_generator1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/collapse_all1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/comment1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/composition1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/cut1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/delegate1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/delete1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/dependency1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/diagram_size1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/enum1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/expand_all1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/format1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/generalization1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/help1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/image1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/interface1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/mail1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/nesting1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/new_document1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/new_entity1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/note1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/open1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/options1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/paste1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/print1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/print_preview1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/print_setup1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/realization1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/redo1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/save1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/search_web1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/struct1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/undo1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/web1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/zoom_in1.png" subtype="Code" buildaction="Nothing" />
+    <File name="GUI/Resources/zoom_out1.png" subtype="Code" buildaction="Nothing" />
+    <File name="Help/About_Raptorgraph.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/ARC2.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/ARC3.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/array_2d_sum.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/array_average.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Array_Operations.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Array_Overview.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/boolean_expressions.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Building_a_flowchart.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/BUTTON_EXECUTE.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Calling_Subcharts.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/calls_v_functions_1.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/calls_v_functions_2.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/calls_v_functions_3.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/calls_v_functions_4.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/calls_v_functions_5.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/calls_v_functions_6.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/calls_v_functions_7.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/CIRCLE.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Clear_Console.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Clear_Window.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Closest_Color.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Close_Graph_Window.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/COLLAPSED.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Colors.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/copy_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Creating_Arrays.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Creating_a_Subchart.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/cut_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/default.css" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Delay_For.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/display_number.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Display_Text.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Draw_Arc.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Draw_Box.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Draw_Circle.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Draw_Ellipse.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Draw_Line.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Editing_Symbols.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/EDIT_IF_CONTROL.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/EDIT_INPUT_SYMBOL.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/EDIT_LOOPL.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/EDIT_MENU.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/EDIT_OUTPUT.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/EDIT_RECTANGLE.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/eHlpDhtm.js" subtype="Code" buildaction="Exclude" />
+    <File name="Help/ELLIPSE.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/execute_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/EXECUTING.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Executing_a_flowchart.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/EXECUTION-IN-GREEN.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Files_Overview.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/file_end_of_input.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/file_input.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/FILE_MENU.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/file_output.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/FINGER_POINTER.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Flood_Fill.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/freeze_demo.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Freeze_Graph_Window.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/FULL_SCREEN1.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Generating_Random_Colors.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/GET_FONT_HEIGHT.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Get_Font_Height.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/GET_FONT_WIDTH.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Get_Font_Width.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/GET_KEY.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Get_Key.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/GET_KEY_STRING.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Get_Key_String.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/GET_MAX_HEIGHT.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/get_max_height.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/GET_MAX_WIDTH.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/get_max_width.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Get_Mouse_Button.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/GET_MOUSE_X.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Get_Mouse_X.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/GET_MOUSE_Y.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Get_Mouse_Y.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Get_Pixel.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/GET_WINDOW_HEIGHT.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Get_Window_Height.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/GET_WINDOW_WIDTH.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/get_window_width.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/HELP_MENU.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/HtmlHelp.css" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Inputting_from_a_File.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Input_Line_by_Line.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Introducing_Raptor.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/IS_OPEN.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/is_open.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/KEY_HIT.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Key_Hit.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/LASSO_SELECT.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/LOOP_BEFORE_COLLAPSE.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/LOOP_COLLAPSED.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/MASTERCONSOLE.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/math-functions.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/math-operators.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/MOUSE_BUTTON_PRESSED.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Mouse_Button_Pressed.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/MOUSE_BUTTON_RELEASED.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Mouse_Button_Released.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/MS_Help.css" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Names_in_Raptor.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/new_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/NOT_COLLAPSED.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Open_Graph_Window.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/open_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Outputting_to_a_File.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Overview_of_Raptor.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/paste_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/pause_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/POP-UP_MENU.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/print_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Procedure_Calls_vs._Functions.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Put_Pixel.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/radians.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/raptorgraph_coordinates.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/RaptorGraph_Overview.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Raptor_Functions.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Raptor_symbols.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Raptor_workspace.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Readme.txt" subtype="Code" buildaction="Exclude" />
+    <File name="Help/redo_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/reducing_displayed_chart_size.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/RUN_MENU.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/save_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/scale_value_from_toolbar.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/SELECT_BEFORE_COLLAPSE.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/SELECT_COLLAPSED.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Set_Window_Title.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/slider_from_toolbar.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Sound_Operations.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Spacing_for_Readability.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/START-END.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/steptonextshape_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/stop_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/strings-assign-ex-1.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/strings-assign-ex-2.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/strings-assign-ex-3.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/strings-display-text-ex.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/strings-put-ex.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Strings.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/String_Comparisons.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/String_Input.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/String_Operations.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Subchart_Overview.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/SYMBOLS.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/TOOLBAR.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/TOP_MENU_OPTIONS.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/trig-functions.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/TUTORIAL1.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/TUTORIAL2.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/TUTORIAL3.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Tutorial_-_Building_a_Flowchart.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Two-Dimensional_Arrays.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Type_Queries.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/undo_symbol.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Using_the_MasterConsole.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Using_the_menu.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Using_the_toolbar.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Variables_in_Raptor.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/VELOC.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/VIEW_MENU.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/w95help.css" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Wait_For_Key.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Wait_For_Mouse_Button.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Watch_Window with 2D Array.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Help/WATCH_WINDOW.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Help/Watch_window.htm" subtype="Code" buildaction="Exclude" />
+    <File name="Help/WINDOW_MENU.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="iconv.dll" subtype="Code" buildaction="Exclude" />
+    <File name="Interop.COMGRAPHLib.dll" subtype="Code" buildaction="Exclude" />
+    <File name="interpreter.dll" subtype="Code" buildaction="Exclude" />
+    <File name="List of functions.htm" subtype="Code" buildaction="Exclude" />
+    <File name="mgnat.dll" subtype="Code" buildaction="Exclude" />
+    <File name="mgnatcs.dll" subtype="Code" buildaction="Exclude" />
+    <File name="NEW.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="OPEN.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="PASTE.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="Playback_Status_Next.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Playback_Status_Pause.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Playback_Status_Play.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Playback_Status_Stop.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="Plugins_PlaySound.dll" subtype="Code" buildaction="Exclude" />
+    <File name="plugins_powermod.dll" subtype="Code" buildaction="Exclude" />
+    <File name="PRINT.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="REDO.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="redo_gray.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="SAVE.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="struct.png" subtype="Code" buildaction="Exclude" />
+    <File name="UNDO.BMP" subtype="Code" buildaction="Exclude" />
+    <File name="UNDO_gray.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="VELOC.bmp" subtype="Code" buildaction="Exclude" />
+    <File name="VmDetectLibrary.dll" subtype="Code" buildaction="Exclude" />
+    <File name="AssemblyInfo.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Assignment_Dlg.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="Autoupdate.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Balloon.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="BARTPEFileOpenList.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="BARTPEFileOpenList.Designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/BARTPEFileOpenList.cs" />
+    <File name="BARTPEFileSaveList.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="BARTPEFileSaveList.Designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/BARTPEFileSaveList.cs" />
+    <File name="BinaryComponent.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Buffered.cs" subtype="Code" contentType="Component" buildaction="Compile" />
+    <File name="CallStack.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Call_Dialog.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="ClassTabPage.cs" subtype="Code" contentType="Component" buildaction="Compile" />
+    <File name="ClassTabPage.Designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/ClassTabPage.cs" />
+    <File name="ClipboardMultiplatform.cs" subtype="Code" buildaction="Compile" />
+    <File name="Clipboard_Data.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="CommentBox.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Comment_Dlg.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="Compile_Helpers.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Component.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Constructors.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Control_Dlg.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="Return_Dlg.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="EmergencyDialog.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="EmergencyDialog.Designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/EmergencyDialog.cs" />
+    <File name="FilesListBox.cs" subtype="Code" contentType="Component" buildaction="Compile" />
+    <File name="Generate_IL.cs" subtype="Code" buildaction="Compile" />
+    <File name="Generate_Interface.cs" subtype="Code" buildaction="Nothing" />
+    <File name="Generators.cs" subtype="Code" buildaction="Compile" />
+    <File name="MD5Helper.cs" subtype="Code" buildaction="Compile" />
+    <File name="Oval_Procedure.cs" subtype="Code" buildaction="Compile" />
+    <File name="Oval_Return.cs" subtype="Code" buildaction="Compile" />
+    <File name="ParseHelpers.cs" subtype="Code" buildaction="Compile" />
+    <File name="Procedure_name.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="Dialog_Helpers.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="HelpForm.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="IF_Control.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Input_Dlg.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="logging_info.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Loop.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="MasterConsole.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="MRU.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Output_Dlg.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="Oval.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Parallelogram.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="PensBrushes.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Plugins.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Procedure_Chart.cs" subtype="Code" contentType="Component" buildaction="Compile" />
+    <File name="PromptForm.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="Properties/Resources.Designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/Properties/Resources.resx" />
+    <File name="Rectangle.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Registry_Settings.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Runtime.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Step_Helpers.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="StopSign.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="Subchart.cs" subtype="Code" contentType="Component" buildaction="Compile" />
+    <File name="Subchart_name.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="SubmitServerForm.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="UMLDiagram.cs" subtype="Code" contentType="UserControl" buildaction="Compile" />
+    <File name="UMLDiagram.Designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/UMLDiagram.cs" />
+    <File name="UMLupdater.cs" subtype="Code" buildaction="Compile" />
+    <File name="Undo_Stack.cs" subtype="Code" contentType="Code" buildaction="Compile" />
+    <File name="UserControl1.cs" subtype="Code" contentType="UserControl" buildaction="Compile" />
+    <File name="UserControl1.Designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/UserControl1.cs" />
+    <File name="ValueArrays.cs" subtype="Code" buildaction="Compile" />
+    <File name="VerifyTestingEnvironment.cs" subtype="Code" buildaction="Compile" />
+    <File name="Visual_Flow_Form.cs" subtype="Code" contentType="Form" buildaction="Compile" />
+    <File name="Assignment_Dlg.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Assignment_Dlg.cs" resource_id="raptor.Assignment_Dlg.resources" />
+    <File name="BARTPEFileOpenList.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/BARTPEFileOpenList.cs" resource_id="raptor.BARTPEFileOpenList.resources" />
+    <File name="BARTPEFileSaveList.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/BARTPEFileSaveList.cs" resource_id="raptor.BARTPEFileSaveList.resources" />
+    <File name="Buffered.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Buffered.cs" resource_id="raptor.Buffered.resources" />
+    <File name="Call_Dialog.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Call_Dialog.cs" resource_id="raptor.Call_Dialog.resources" />
+    <File name="ClassTabPage.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/ClassTabPage.cs" resource_id="raptor.ClassTabPage.resources" />
+    <File name="Comment_Dlg.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Comment_Dlg.cs" resource_id="raptor.Comment_Dlg.resources" />
+    <File name="Control_Dlg.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Control_Dlg.cs" resource_id="raptor.Control_Dlg.resources" />
+    <File name="EmergencyDialog.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/EmergencyDialog.cs" resource_id="raptor.EmergencyDialog.resources" />
+    <File name="Procedure_name.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Procedure_name.cs" resource_id="raptor.Procedure_name.resources" />
+    <File name="HelpForm.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/HelpForm.cs" resource_id="raptor.HelpForm.resources" />
+    <File name="Input_Dlg.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Input_Dlg.cs" resource_id="raptor.Input_Dlg.resources" />
+    <File name="MasterConsole.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/MasterConsole.cs" resource_id="raptor.MasterConsole.resources" />
+    <File name="Output_Dlg.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Output_Dlg.cs" resource_id="raptor.Output_Dlg.resources" />
+    <File name="PromptForm.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/PromptForm.cs" resource_id="raptor.PromptForm.resources" />
+    <File name="Properties/Resources.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" generator="ResXFileCodeGenerator" resource_id="raptor.Properties.Resources.resources" />
+    <File name="Return_Dlg.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Return_Dlg.cs" resource_id="raptor.Return_Dlg.resources" />
+    <File name="Subchart.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Subchart.cs" resource_id="raptor.Subchart.resources" />
+    <File name="Subchart_name.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Subchart_name.cs" resource_id="raptor.Subchart_name.resources" />
+    <File name="SubmitServerForm.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/SubmitServerForm.cs" resource_id="raptor.SubmitServerForm.resources" />
+    <File name="UMLDiagram.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/UMLDiagram.cs" resource_id="raptor.UMLDiagram.resources" />
+    <File name="UserControl1.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/UserControl1.cs" resource_id="raptor.UserControl1.resources" />
+    <File name="Visual_Flow_Form.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Visual_Flow_Form.cs" resource_id="raptor.Visual_Flow_Form.resources" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="CodeProjectComBigIntegerPackage, Version=1.0.1348.26246, Culture=neutral, PublicKeyToken=ab3cd1c55739f455, processorArchitecture=MSIL" />
+    <ProjectReference type="Gac" localcopy="True" refto="interpreter, Version=0.0.0.0, Culture=neutral" />
+    <ProjectReference type="Gac" localcopy="True" refto="mgnat, Version=3.2.0.0, Culture=neutral, PublicKeyToken=713d0175fa8fbef8, processorArchitecture=MSIL" />
+    <ProjectReference type="Gac" localcopy="True" refto="mgnatcs, Version=3.2.0.0, Culture=neutral, PublicKeyToken=713d0175fa8fbef8, processorArchitecture=MSIL" />
+    <ProjectReference type="Gac" localcopy="True" specificVersion="False" refto="microsoft.ink, Version=1.7.2600.2180, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <ProjectReference type="Gac" localcopy="True" refto="Plugins_PlaySound, Version=1.0.1433.27897, Culture=neutral" />
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Project" localcopy="True" refto="CodeGenerator" />
+    <ProjectReference type="Project" localcopy="True" refto="Core" />
+    <ProjectReference type="Project" localcopy="True" refto="CSharp" />
+    <ProjectReference type="Project" localcopy="True" refto="dotnetgraph" />
+    <ProjectReference type="Project" localcopy="True" refto="GeneratorAda" />
+    <ProjectReference type="Project" localcopy="True" refto="GUI.Diagram" />
+    <ProjectReference type="Project" localcopy="True" refto="GUI" />
+    <ProjectReference type="Project" localcopy="True" refto="Java" />
+    <ProjectReference type="Project" localcopy="True" refto="Translations" />
+  </References>
+  <LanguageParameters StartupObject="raptor.Visual_Flow_Form" ApplicationIcon="App.ico" CodePage="65001" ctype="CSharpProjectParameters" />
+</Project>
