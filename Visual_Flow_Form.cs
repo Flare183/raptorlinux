@@ -14,7 +14,7 @@ using System.Threading;
 using System.Timers;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
-using Microsoft.Win32;
+using Microsoft.Win32;	// We need to get rid of the use of this.
 using System.Diagnostics;
 using System.Reflection;
 
@@ -3693,11 +3693,11 @@ namespace raptor
 					this.modified = false;
 				}
 			}
-			catch (System.Exception exc)
+			catch (System.Exception exc)		// I changed the report thingy to the file bug on launchpad
 			{ 
 				MessageBox.Show(
 					prefix + '\n' +
-					"Please report to Martin.Carlisle@usafa.edu" + '\n' +
+					"Please report to this to https://bugs.launchpad.net/raptorlinux/+filebug" + '\n' +
 					"Meantime, try undo then save (keep doing undo until success)" + '\n'+
 					"Or open an autosave file: " + this.fileName + ".[0-9]" + '\n' +
 					"Use Alt-PrtSc and paste into email" + '\n' +
@@ -3706,6 +3706,7 @@ namespace raptor
 					MessageBoxButtons.OK, MessageBoxIcon.Error);
 				this.Save_Error = true;
 			}
+// Windows stuff?
             if (Component.BARTPE) {
                 try
                 {

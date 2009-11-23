@@ -3,14 +3,19 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Visual_Flow_Form.cs" ctype="Workbench">
-    <Files>
-      <File FileName="Visual_Flow_Form.cs" Line="28" Column="52" />
-    </Files>
+  <MonoDevelop.Ide.Workbench ctype="Workbench">
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
-          <Node name="raptor" expanded="True" />
+        <State expanded="True">
+          <Node name="CodeGenerator" expanded="True" />
+          <Node name="Core" expanded="True" />
+          <Node name="CSharp" expanded="True" />
+          <Node name="dotnetgraph" expanded="True" />
+          <Node name="GeneratorAda" expanded="True" />
+          <Node name="GUI" expanded="True" />
+          <Node name="raptor" expanded="True">
+            <Node name="Visual_Flow_Form.cs" selected="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">
