@@ -2487,7 +2487,7 @@ namespace raptor
                 form.Load_File(args[0]);
                 if (Component.compiled_flowchart)
                 {
-                    throw new System.Exception("can't run compiled file from commandline");
+                    throw new System.Exception("can't run compiled file from commandline");		// Why not? This should be changed I think - Jesse N. Richardson
                 }
                 Compile_Helpers.Compile_Flowchart(form.carlisle.TabPages);
             }
@@ -3707,6 +3707,7 @@ namespace raptor
 				this.Save_Error = true;
 			}
 // Windows stuff?
+			// TODO: Replace with Linux Pathnames
             if (Component.BARTPE) {
                 try
                 {
@@ -3914,7 +3915,7 @@ namespace raptor
             cryptoStream.Close();
             fStream.Close();
         }
-        
+        // TODO: Shouldn't we use the Linux version of the gpg program?
         private void GPG_Encrypt(string output_file)
         {
             Process proc = new Process();
@@ -5897,7 +5898,7 @@ namespace raptor
             }
             catch
             {
-                MessageBox.Show("Please install the Microsoft.Ink.dll CLR 2.0 Update (KB900722)");
+                MessageBox.Show("Please install the Microsoft.Ink.dll CLR 2.0 Update (KB900722)");	// FIXME I think we should include this Microsoft File in the installer/package file
             }
             if (non_oval_selected || this.selectedComment != null || this.region_selected)
 			{
@@ -6585,7 +6586,7 @@ namespace raptor
             Start.Clear_Breakpoints();
             this.flow_panel.Invalidate();
 		}
-		public class Win32 
+		public class Win32 	// FIXME Replace with Linux files, possibly
 		{
 			[DllImport("user32.dll")]
 			public static extern bool OpenClipboard(IntPtr hWndNewOwner);
@@ -7264,7 +7265,7 @@ namespace raptor
 			if (this.fileName==null||this.fileName=="")
 			{
 				MessageBox.Show("Must save before generating standalone",
-					"Can't generate EXE");
+					"Can't generate executable");
 				return;
 			}
             try
@@ -7511,7 +7512,7 @@ namespace raptor
 
 
 
-		// To do list:
+		// TODO: To do list:
 		// 1. Undo
 		// 2. fix load/save for subchart calls
 	}

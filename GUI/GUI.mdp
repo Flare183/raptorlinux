@@ -44,9 +44,9 @@
     <ProjectReference type="Project" localcopy="True" refto="CodeGenerator" />
     <ProjectReference type="Project" localcopy="True" refto="Core" />
     <ProjectReference type="Project" localcopy="True" refto="CSharp" />
-    <ProjectReference type="Project" localcopy="True" refto="Diagram" />
     <ProjectReference type="Project" localcopy="True" refto="Java" />
     <ProjectReference type="Project" localcopy="True" refto="Translations" />
+    <ProjectReference type="Project" localcopy="True" refto="GUI.Diagram" />
   </References>
   <LanguageParameters StartupObject="NClass.GUI.Program" ApplicationIcon="nclass.ico" ctype="CSharpProjectParameters" />
 </Project>

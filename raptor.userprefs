@@ -3,28 +3,32 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmergencyDialog.cs" ctype="Workbench">
+    <Files>
+      <File FileName="GUI/Dialogs/OptionsDialog.cs" Line="30" Column="37" />
+      <File FileName="EmergencyDialog.cs" Line="16" Column="26" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="GeneratorAda" expanded="True">
+          <Node name="CodeGenerator" expanded="True" />
+          <Node name="GUI" expanded="True">
             <Node name="References" expanded="True" />
-          </Node>
-          <Node name="raptor" expanded="True">
-            <Node name="References" expanded="True">
-              <Node name="microsoft.ink, Version=1.7.2600.2180, Culture=neutral, PublicKeyToken=31bf3856ad364e35" expanded="True" />
+            <Node name="Dialogs" expanded="True">
+              <Node name="OptionsDialog.cs" expanded="True" />
             </Node>
-            <Node name="interpreter.dll" selected="True" />
+          </Node>
+          <Node name="raptor" expanded="True" selected="True">
+            <Node name="References" expanded="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">
         <State expanded="True">
-          <Node name="Core" expanded="True" selected="True">
-            <Node name="References" expanded="True" />
-          </Node>
           <Node name="raptor" expanded="True">
-            <Node name="References" expanded="True" />
+            <Node name="raptor" expanded="True">
+              <Node name="raptor.VerifyTestingEnvironment" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
