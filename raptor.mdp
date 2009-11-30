@@ -68,7 +68,6 @@
     <File name="suggestions.ads" subtype="Code" buildaction="Nothing" />
     <File name="App.ico" subtype="Code" buildaction="Exclude" />
     <File name="class.png" subtype="Code" buildaction="Exclude" />
-    <File name="CodeProjectComBigIntegerPackage.dll" subtype="Code" buildaction="Exclude" />
     <File name="COMgraph.dll" subtype="Code" buildaction="Exclude" />
     <File name="composition.png" subtype="Code" buildaction="Exclude" />
     <File name="COPY.BMP" subtype="Code" buildaction="Exclude" />
@@ -408,12 +407,7 @@
     <File name="Visual_Flow_Form.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/Visual_Flow_Form.cs" resource_id="raptor.Visual_Flow_Form.resources" />
   </Contents>
   <References>
-    <ProjectReference type="Gac" localcopy="True" refto="CodeProjectComBigIntegerPackage, Version=1.0.1348.26246, Culture=neutral, PublicKeyToken=ab3cd1c55739f455, processorArchitecture=MSIL" />
-    <ProjectReference type="Gac" localcopy="True" refto="interpreter, Version=0.0.0.0, Culture=neutral" />
-    <ProjectReference type="Gac" localcopy="True" refto="mgnat, Version=3.2.0.0, Culture=neutral, PublicKeyToken=713d0175fa8fbef8, processorArchitecture=MSIL" />
-    <ProjectReference type="Gac" localcopy="True" refto="mgnatcs, Version=3.2.0.0, Culture=neutral, PublicKeyToken=713d0175fa8fbef8, processorArchitecture=MSIL" />
     <ProjectReference type="Gac" localcopy="True" specificVersion="False" refto="microsoft.ink, Version=1.7.2600.2180, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
-    <ProjectReference type="Gac" localcopy="True" refto="Plugins_PlaySound, Version=1.0.1433.27897, Culture=neutral" />
     <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     <ProjectReference type="Gac" localcopy="True" refto="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     <ProjectReference type="Gac" localcopy="True" refto="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -428,6 +422,10 @@
     <ProjectReference type="Project" localcopy="True" refto="GUI" />
     <ProjectReference type="Project" localcopy="True" refto="Java" />
     <ProjectReference type="Project" localcopy="True" refto="Translations" />
+    <ProjectReference type="Assembly" localcopy="True" specificVersion="False" refto="dll_files/interpreter.dll" />
+    <ProjectReference type="Assembly" localcopy="True" specificVersion="False" refto="dll_files/mgnat.dll" />
+    <ProjectReference type="Assembly" localcopy="True" specificVersion="False" refto="dll_files/mgnatcs.dll" />
+    <ProjectReference type="Assembly" localcopy="True" specificVersion="False" refto="dll_files/Plugins_PlaySound.dll" />
   </References>
   <LanguageParameters StartupObject="raptor.Visual_Flow_Form" ApplicationIcon="App.ico" CodePage="65001" ctype="CSharpProjectParameters" />
 </Project>
