@@ -1,16 +1,17 @@
-<Project releaseversion="0.1" name="raptor" fileversion="2.0" newfilesearch="OnLoad" language="C#" DefaultNamespace="raptor" ProjectType="Local" SccProjectName="" SccLocalPath="" SccAuxPath="" SccProvider="" Configuration="Debug" Platform="AnyCPU" ApplicationIcon="App.ico" AssemblyKeyContainerName="" AssemblyName="raptor" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" RunPostBuildEvent="OnBuildSuccess" FileUpgradeFlags="" UpgradeBackupLocation="" OldToolsVersion="2.0" TargetFrameworkVersion="v2.0" StartupObject="raptor.Visual_Flow_Form" CodePage="65001" targetFramework="3.5" ctype="DotNetProject">
+<Project releaseversion="0.1" name="raptor" fileversion="2.0" newfilesearch="OnLoad" language="C#" DefaultNamespace="raptor" ProjectType="Local" SccProjectName="" SccLocalPath="" SccAuxPath="" SccProvider="" Configuration="Debug" Platform="AnyCPU" ApplicationIcon="App.ico" AssemblyKeyContainerName="" AssemblyName="raptor" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" RunPostBuildEvent="OnBuildSuccess" FileUpgradeFlags="" UpgradeBackupLocation="" OldToolsVersion="2.0" TargetFrameworkVersion="v2.0" StartupObject="raptor.Visual_Flow_Form" CodePage="65001" targetFramework="2.0" ctype="DotNetProject">
   <Configurations active="Debug">
     <Configuration name="Debug" BaseAddress="285212672" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" FileAlignment="4096" Optimize="false" RegisterForComInterop="false" RemoveIntegerChecks="false" WarningLevel="4" ctype="DotNetProjectConfiguration">
       <Output directory="bin/Debug/" assembly="raptor" />
       <Build debugmode="True" target="WinExe" />
       <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
-      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+      <EnvironmentVariables />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="True" generateoverflowchecks="False" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
     </Configuration>
     <Configuration name="Release" BaseAddress="285212672" ConfigurationOverrideFile="" DefineConstants="TRACE" DocumentationFile="" FileAlignment="4096" Optimize="true" RegisterForComInterop="false" RemoveIntegerChecks="false" WarningLevel="4" ctype="DotNetProjectConfiguration">
       <Output directory="bin/Release/" assembly="raptor" />
       <Build debugmode="False" target="WinExe" />
       <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
-      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="TRACE" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="True" generateoverflowchecks="False" definesymbols="TRACE" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
     </Configuration>
   </Configurations>
   <Contents>
