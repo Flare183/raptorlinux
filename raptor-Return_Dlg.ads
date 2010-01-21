@@ -123,5 +123,5 @@ private
    pragma MSIL_Constructor(new_Return_Dlg);
 end raptor.Return_Dlg;
 pragma Import(MSIL,raptor.Return_Dlg,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Return_Dlg");

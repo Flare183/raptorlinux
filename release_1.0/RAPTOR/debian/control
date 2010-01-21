@@ -1,0 +1,15 @@
+Source: raptor4linux
+Section: devel
+Priority: optional
+Maintainer: Jesse N. Richardson <richardson183@bellsouth.net>
+Standards-Version: 3.7.3
+Build-Depends: mono
+Homepage: http://raptor.martincarlisle.com/
+
+Package: raptor4linux
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: RAPTOR is a flowchart-based programming environment, designed specifically to help students visualize their algorithms and avoid syntactic
+ baggage.RAPTOR programs are created visually and executed visually by tracing the execution through the flowchart.  Required syntax is kept to a minimum. 
+ Students prefer using flowcharts to express their algorithms, and are more successful creating algorithms using RAPTOR than using a traditional language 
+ or writing flowcharts without RAPTOR.

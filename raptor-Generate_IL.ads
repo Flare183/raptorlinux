@@ -397,5 +397,5 @@ private
    pragma Import(MSIL,Variable_Assignment_Start,"Variable_Assignment_Start");
 end raptor.Generate_IL;
 pragma Import(MSIL,raptor.Generate_IL,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Generate_IL");

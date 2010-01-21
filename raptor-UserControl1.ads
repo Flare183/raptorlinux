@@ -107,5 +107,5 @@ private
    pragma MSIL_Constructor(new_UserControl1);
 end raptor.UserControl1;
 pragma Import(MSIL,raptor.UserControl1,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.UserControl1");

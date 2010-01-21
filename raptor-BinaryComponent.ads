@@ -123,5 +123,5 @@ private
    pragma Import(MSIL,Show_Guids,"Show_Guids");
 end raptor.BinaryComponent;
 pragma Import(MSIL,raptor.BinaryComponent,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.BinaryComponent");

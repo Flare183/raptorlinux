@@ -6,6 +6,8 @@ package Ada_Runtime is
    procedure Redirect_Standard_Input;
    procedure Redirect_Output (
          V : Numbers.Value);
+   procedure Redirect_Output_Append (
+      V : Numbers.Value);
    procedure Redirect_Input (
          V : Numbers.Value);
    function Prompt_Dialog (

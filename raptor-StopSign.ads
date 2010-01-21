@@ -37,5 +37,5 @@ private
    pragma Import(MSIL,Make_Path,"Make_Path");
 end raptor.StopSign;
 pragma Import(MSIL,raptor.StopSign,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.StopSign");

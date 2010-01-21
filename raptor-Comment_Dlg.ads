@@ -123,5 +123,5 @@ private
    pragma MSIL_Constructor(new_Comment_Dlg);
 end raptor.Comment_Dlg;
 pragma Import(MSIL,raptor.Comment_Dlg,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Comment_Dlg");

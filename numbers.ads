@@ -2,7 +2,7 @@ with Ada.Numerics;
 with Mssyst.String;
 with MSSyst.Object;
 package Numbers is
-
+   procedure Set_Precision(I : in Integer);
    type Value is private;
    One    : constant Value;
    Pi     : constant Value;

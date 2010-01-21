@@ -377,7 +377,7 @@ package body Raptor_Files is
    -- Redirect_Output --
    ---------------------
 
-   procedure Redirect_Output (Filename : in MSSyst.String.Ref) is
+   procedure Redirect_Output (Filename : in MSSyst.String.Ref; Append : in Boolean) is
    begin
       -- don't allow redirection if networked (ignore)
       if Network_Is_Redirected or Process_Redirected then
@@ -395,7 +395,15 @@ package body Raptor_Files is
             Current_Output := To_File_Access(Ada.Text_IO.Standard_Output);
          else
             Current_Output := new Ada.Text_IO.File_Type;
+            if Append then
+            begin
+               Ada.Text_Io.Open(File => Current_Output.All, Name => +Filename, Mode => Ada.Text_Io.Append_File);
+            exception when others =>
+               Ada.Text_Io.Create(File => Current_Output.all, Name => +Filename, Mode => Ada.Text_Io.Out_File);
+            end;
+            else
             Ada.Text_Io.Create(File => Current_Output.all, Name => +Filename, Mode => Ada.Text_Io.Out_File);
+            end if;
          end if;
       exception when others =>
          Ada.Exceptions.Raise_Exception(Name_Error'Identity,

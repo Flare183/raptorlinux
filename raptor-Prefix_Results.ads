@@ -4,7 +4,7 @@
 --     US Air Force Academy
 --     carlislem@acm.org
 with MSSyst.Object;
-with MSIL_Types; with MSSyst.String; with MSSyst.String;
+with MSIL_Types; with MSSyst.String;
 use MSIL_Types;
 
 limited with MSSyst.Type_k;
@@ -27,5 +27,5 @@ private
    pragma MSIL_Constructor(new_Prefix_Results);
 end raptor.Prefix_Results;
 pragma Import(MSIL,raptor.Prefix_Results,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Prefix_Results");

@@ -198,5 +198,5 @@ private
    pragma Import(MSIL,Toggle_Breakpoint,"Toggle_Breakpoint");
 end raptor.Loop_k;
 pragma Import(MSIL,raptor.Loop_k,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Loop");

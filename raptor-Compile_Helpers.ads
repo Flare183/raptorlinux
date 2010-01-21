@@ -60,5 +60,5 @@ private
    pragma Import(MSIL,Start_New_Declaration,"Start_New_Declaration");
 end raptor.Compile_Helpers;
 pragma Import(MSIL,raptor.Compile_Helpers,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Compile_Helpers");

@@ -57,5 +57,5 @@ private
    pragma Import(MSIL,ToString,"ToString");
 end raptor.Mode;
 pragma Import(MSIL,raptor.Mode,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Mode");

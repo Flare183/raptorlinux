@@ -55,5 +55,5 @@ private
    pragma Import(MSIL,Invoke,"Invoke");
 end FilesBrowser.FileSelectedEventHandler;
 pragma Import(MSIL,FilesBrowser.FileSelectedEventHandler,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]FilesBrowser.FileSelectedEventHandler");

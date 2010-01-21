@@ -180,5 +180,5 @@ private
    pragma Import(MSIL,tab_disposed,"tab_disposed");
 end raptor.Subchart;
 pragma Import(MSIL,raptor.Subchart,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Subchart");

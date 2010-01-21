@@ -159,5 +159,5 @@ private
    pragma Import(MSIL,RunDialog,"RunDialog");
 end raptor.Procedure_Chart;
 pragma Import(MSIL,raptor.Procedure_Chart,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Procedure_Chart");

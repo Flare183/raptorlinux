@@ -14,7 +14,7 @@ using System.Threading;
 using System.Timers;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
-using Microsoft.Win32;	// We need to get rid of the use of this.
+using Microsoft.Win32;
 using System.Diagnostics;
 using System.Reflection;
 
@@ -2487,7 +2487,7 @@ namespace raptor
                 form.Load_File(args[0]);
                 if (Component.compiled_flowchart)
                 {
-                    throw new System.Exception("can't run compiled file from commandline");		// Why not? This should be changed I think - Jesse N. Richardson
+                    throw new System.Exception("can't run compiled file from commandline");
                 }
                 Compile_Helpers.Compile_Flowchart(form.carlisle.TabPages);
             }
@@ -3375,7 +3375,7 @@ namespace raptor
                     return;
                 }
             }
-            catch
+            catch (Exception exc)
             {
                 MessageBox.Show("Please install the Microsoft.Ink.dll CLR 2.0 Update (KB900722)");
             }
@@ -3693,11 +3693,11 @@ namespace raptor
 					this.modified = false;
 				}
 			}
-			catch (System.Exception exc)		// I changed the report thingy to the file bug on launchpad
+			catch (System.Exception exc)
 			{ 
 				MessageBox.Show(
 					prefix + '\n' +
-					"Please report to this to https://bugs.launchpad.net/raptorlinux/+filebug" + '\n' +
+					"Please report to Martin.Carlisle@usafa.edu" + '\n' +
 					"Meantime, try undo then save (keep doing undo until success)" + '\n'+
 					"Or open an autosave file: " + this.fileName + ".[0-9]" + '\n' +
 					"Use Alt-PrtSc and paste into email" + '\n' +
@@ -3706,8 +3706,6 @@ namespace raptor
 					MessageBoxButtons.OK, MessageBoxIcon.Error);
 				this.Save_Error = true;
 			}
-// Windows stuff?
-			// TODO: Replace with Linux Pathnames
             if (Component.BARTPE) {
                 try
                 {
@@ -3915,7 +3913,7 @@ namespace raptor
             cryptoStream.Close();
             fStream.Close();
         }
-        // TODO: Shouldn't we use the Linux version of the gpg program?
+        
         private void GPG_Encrypt(string output_file)
         {
             Process proc = new Process();
@@ -5898,7 +5896,7 @@ namespace raptor
             }
             catch
             {
-                MessageBox.Show("Please install the Microsoft.Ink.dll CLR 2.0 Update (KB900722)");	// FIXME I think we should include this Microsoft File in the installer/package file
+                MessageBox.Show("Please install the Microsoft.Ink.dll CLR 2.0 Update (KB900722)");
             }
             if (non_oval_selected || this.selectedComment != null || this.region_selected)
 			{
@@ -6586,7 +6584,7 @@ namespace raptor
             Start.Clear_Breakpoints();
             this.flow_panel.Invalidate();
 		}
-		public class Win32 	// FIXME Replace with Linux files, possibly
+		public class Win32 
 		{
 			[DllImport("user32.dll")]
 			public static extern bool OpenClipboard(IntPtr hWndNewOwner);
@@ -7265,7 +7263,7 @@ namespace raptor
 			if (this.fileName==null||this.fileName=="")
 			{
 				MessageBox.Show("Must save before generating standalone",
-					"Can't generate executable");
+					"Can't generate EXE");
 				return;
 			}
             try
@@ -7512,7 +7510,7 @@ namespace raptor
 
 
 
-		// TODO: To do list:
+		// To do list:
 		// 1. Undo
 		// 2. fix load/save for subchart calls
 	}

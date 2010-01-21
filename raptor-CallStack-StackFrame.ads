@@ -34,5 +34,5 @@ private
    pragma MSIL_Constructor(new_StackFrame);
 end raptor.CallStack.StackFrame;
 pragma Import(MSIL,raptor.CallStack.StackFrame,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.CallStack/StackFrame");

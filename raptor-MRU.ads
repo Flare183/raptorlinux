@@ -34,5 +34,5 @@ private
    pragma Import(MSIL,Update_MRU_Menus,"Update_MRU_Menus");
 end raptor.MRU;
 pragma Import(MSIL,raptor.MRU,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.MRU");

@@ -176,7 +176,7 @@ package body Interpreter is
       Lexer.Initialize(Text => Ada_Text);
       Parser.Set_Expression_Object(Component);
 
-      Result.Tree := Parseable_Pointer(Parser.Parse_Input);
+      Result.Tree := Parseable_Pointer(Parser.Parse_Input_Statement);
       Result.Valid := True;
       return Result;
    exception

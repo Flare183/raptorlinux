@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
     <ProductVersion>9.0.21022</ProductVersion>
@@ -28,19 +27,19 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>raptor</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>2.0</OldToolsVersion>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <newfilesearch>OnLoad</newfilesearch>
-    <StartupObject>raptor.Visual_Flow_Form</StartupObject>
-    <CodePage>65001</CodePage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
@@ -48,25 +47,36 @@
     </DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
     <Optimize>false</Optimize>
     <RegisterForComInterop>false</RegisterForComInterop>
     <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningLevel>4</WarningLevel>
     <DebugType>full</DebugType>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>TRACE</DefineConstants>
     <DocumentationFile>
     </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
     <Optimize>true</Optimize>
     <RegisterForComInterop>false</RegisterForComInterop>
     <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningLevel>4</WarningLevel>
     <DebugType>none</DebugType>
     <ErrorReport>prompt</ErrorReport>
@@ -76,15 +86,26 @@
     <Reference Include="interpreter, Version=0.0.0.0, Culture=neutral" />
     <Reference Include="mgnat, Version=3.2.0.0, Culture=neutral, PublicKeyToken=713d0175fa8fbef8, processorArchitecture=MSIL" />
     <Reference Include="mgnatcs, Version=3.2.0.0, Culture=neutral, PublicKeyToken=713d0175fa8fbef8, processorArchitecture=MSIL" />
-    <Reference Include="microsoft.ink, Version=1.7.2600.2180, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+    <Reference Include="microsoft.Ink, Version=1.7.2600.2180, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\microsoft.Ink.dll</HintPath>
     </Reference>
     <Reference Include="Plugins_PlaySound, Version=1.0.1433.27897, Culture=neutral" />
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="ada_runtime.adb" />
@@ -146,6 +167,7 @@
     <Content Include="composition.png" />
     <Content Include="COPY.BMP" />
     <Content Include="CUT.BMP" />
+    <Content Include="gpg.exe" />
     <None Include="GUI\Resources\aggregation1.png" />
     <None Include="GUI\Resources\align_bottom1.png" />
     <None Include="GUI\Resources\align_horizontal1.png" />
@@ -521,6 +543,8 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Rectangle.cs">
@@ -573,12 +597,12 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="BARTPEFileOpenList.resx">
-      <DependentUpon>BARTPEFileOpenList.cs</DependentUpon>
       <SubType>Designer</SubType>
+      <DependentUpon>BARTPEFileOpenList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BARTPEFileSaveList.resx">
-      <DependentUpon>BARTPEFileSaveList.cs</DependentUpon>
       <SubType>Designer</SubType>
+      <DependentUpon>BARTPEFileSaveList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Buffered.resx">
       <DependentUpon>Buffered.cs</DependentUpon>
@@ -601,8 +625,8 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="EmergencyDialog.resx">
-      <DependentUpon>EmergencyDialog.cs</DependentUpon>
       <SubType>Designer</SubType>
+      <DependentUpon>EmergencyDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procedure_name.resx">
       <DependentUpon>Procedure_name.cs</DependentUpon>
@@ -629,8 +653,9 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <SubType>Designer</SubType>
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Return_Dlg.resx">
       <DependentUpon>Return_Dlg.cs</DependentUpon>
@@ -660,994 +685,6 @@
       <DependentUpon>Visual_Flow_Form.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="FilesBrowser-FileSelectEventArgs.ads" />
-    <None Include="FilesBrowser-FileSelectedEventHandler.ads" />
-    <None Include="FilesBrowser-FilesListBox.ads" />
-    <None Include="FilesBrowser-IconExtractor-SHFILEINFO.ads" />
-    <None Include="FilesBrowser-IconExtractor.ads" />
-    <None Include="FilesBrowser-IconSize.ads" />
-    <None Include="FilesBrowser.ads" />
-    <None Include="GeneratorAda-AdaGenerator-loop_flags.ads" />
-    <None Include="GeneratorAda-AdaGenerator.ads" />
-    <None Include="GeneratorAda-CplusGenerator-loop_flags.ads" />
-    <None Include="GeneratorAda-CplusGenerator.ads" />
-    <None Include="GeneratorAda-CsharpGenerator-loop_flags.ads" />
-    <None Include="GeneratorAda-CsharpGenerator.ads" />
-    <None Include="GeneratorAda-Imperative_Interface.ads" />
-    <None Include="GeneratorAda-OO_Interface.ads" />
-    <None Include="GeneratorAda.ads" />
-    <None Include="IT105Java-IT105JavaGenerator.ads" />
-    <None Include="IT105Java.ads" />
-    <None Include="UpgradeLog.XML" />
-    <None Include="UpgradeLog2.XML" />
-    <None Include="UpgradeLog3.XML" />
-    <None Include="UpgradeLog4.XML" />
-    <None Include="UpgradeLog5.XML" />
-    <None Include="UpgradeLog6.XML" />
-    <None Include="UpgradeLog7.XML" />
-    <None Include="UpgradeLog8.XML" />
-    <None Include="bob" />
-    <None Include="b~interpreter.adb" />
-    <None Include="b~interpreter.ads" />
-    <None Include="dotnetgraphlibrary-Color_Type.ads" />
-    <None Include="dotnetgraphlibrary-Event_Type.ads" />
-    <None Include="dotnetgraphlibrary-Mouse_Button.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Clear_Window_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Close_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Closest_Color_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Color_To_RGB_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Display_Text_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Draw_Arc_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Draw_Bitmap_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Draw_Box_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Draw_Circle_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Draw_Ellipse_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Draw_Ellipse_Rotate_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Draw_Line_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Flood_Fill_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Get_Max_Size_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Get_Mouse_Button_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Get_Mouse_Location_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Get_Pixel_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Is_Open_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Load_Bitmap_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Open_Graph_Window_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Put_Pixel_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Save_Bitmap_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-SetFontSize_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Set_Window_Title_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-Wait_For_Mouse_Button_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-bool_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-int_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-int_bool_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-mouse_bool_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph-void_Delegate_Type.ads" />
-    <None Include="dotnetgraphlibrary-dotnetgraph.ads" />
-    <None Include="dotnetgraphlibrary.ads" />
-    <None Include="gnat.ago" />
-    <None Include="raptor-Assignment_Dlg.ads" />
-    <None Include="raptor-Autoupdate.ads" />
-    <None Include="raptor-BARTPEFileOpenList.ads" />
-    <None Include="raptor-BARTPEFileSaveList.ads" />
-    <None Include="raptor-Balloon-Corner.ads" />
-    <None Include="raptor-Balloon.ads" />
-    <None Include="raptor-BinaryComponent.ads" />
-    <None Include="raptor-Bold_Results.ads" />
-    <None Include="raptor-Buffered.ads" />
-    <None Include="raptor-CallStack-StackFrame.ads" />
-    <None Include="raptor-CallStack.ads" />
-    <None Include="raptor-Call_Dialog.ads" />
-    <None Include="raptor-ClassTabPage.ads" />
-    <None Include="raptor-Clipboard_Data-kinds.ads" />
-    <None Include="raptor-Clipboard_Data.ads" />
-    <None Include="raptor-CommentBox.ads" />
-    <None Include="raptor-Comment_Dlg.ads" />
-    <None Include="raptor-Compile_Helpers.ads" />
-    <None Include="raptor-Component-FootPrint.ads" />
-    <None Include="raptor-Component.ads" />
-    <None Include="raptor-Constructors.ads" />
-    <None Include="raptor-Control_Dlg.ads" />
-    <None Include="raptor-Dialog_Helpers.ads" />
-    <None Include="raptor-EmergencyDialog.ads" />
-    <None Include="raptor-Generate_Hash.ads" />
-    <None Include="raptor-Generate_IL.ads" />
-    <None Include="raptor-HelpForm.ads" />
-    <None Include="raptor-IF_Control.ads" />
-    <None Include="raptor-Input_Dlg.ads" />
-    <None Include="raptor-Loop_k.ads" />
-    <None Include="raptor-MD5Helper.ads" />
-    <None Include="raptor-MRU.ads" />
-    <None Include="raptor-MasterConsole-clear_text_delegate_type.ads" />
-    <None Include="raptor-MasterConsole-set_text_delegate_type.ads" />
-    <None Include="raptor-MasterConsole.ads" />
-    <None Include="raptor-Mode.ads" />
-    <None Include="raptor-Output_Dlg.ads" />
-    <None Include="raptor-Oval.ads" />
-    <None Include="raptor-Oval_Return.ads" />
-    <None Include="raptor-Parallelogram.ads" />
-    <None Include="raptor-ParseHelpers.ads" />
-    <None Include="raptor-PensBrushes-family.ads" />
-    <None Include="raptor-PensBrushes.ads" />
-    <None Include="raptor-Plugins.ads" />
-    <None Include="raptor-Prefix_Results.ads" />
-    <None Include="raptor-Procedure_Chart.ads" />
-    <None Include="raptor-Procedure_name.ads" />
-    <None Include="raptor-PromptForm-Kill_Delegate_Type.ads" />
-    <None Include="raptor-PromptForm.ads" />
-    <None Include="raptor-Rectangle-Kind_Of.ads" />
-    <None Include="raptor-Rectangle.ads" />
-    <None Include="raptor-Registry_Settings.ads" />
-    <None Include="raptor-Return_Dlg.ads" />
-    <None Include="raptor-Runtime-Add_Node_Delegate.ads" />
-    <None Include="raptor-Runtime-Delete_Scope_Delegate.ads" />
-    <None Include="raptor-Runtime-Parameter_Kind.ads" />
-    <None Include="raptor-Runtime-Variable_Kind.ads" />
-    <None Include="raptor-Runtime.ads" />
-    <None Include="raptor-Runtime_Helpers.ads" />
-    <None Include="raptor-Step_Helpers.ads" />
-    <None Include="raptor-StopSign.ads" />
-    <None Include="raptor-Subchart.ads" />
-    <None Include="raptor-Subchart_Kinds.ads" />
-    <None Include="raptor-Subchart_name.ads" />
-    <None Include="raptor-SubmitServerForm.ads" />
-    <None Include="raptor-UMLDiagram.ads" />
-    <None Include="raptor-UMLupdater.ads" />
-    <None Include="raptor-Undo_Stack-Action.ads" />
-    <None Include="raptor-Undo_Stack-Action_Kind.ads" />
-    <None Include="raptor-Undo_Stack.ads" />
-    <None Include="raptor-UserControl1.ads" />
-    <None Include="raptor-Value_2D_Array.ads" />
-    <None Include="raptor-Value_Array.ads" />
-    <None Include="raptor-Visual_Flow_Form-Load_Delegate_Type.ads" />
-    <None Include="raptor-Visual_Flow_Form-MessageBox_Delegate_Type.ads" />
-    <None Include="raptor-Visual_Flow_Form-Set_Current_Tab_Delegate_Type.ads" />
-    <None Include="raptor-Visual_Flow_Form-Set_Running_Delegate_Type.ads" />
-    <None Include="raptor-Visual_Flow_Form-Set_TopMost_Delegate_Type.ads" />
-    <None Include="raptor-Visual_Flow_Form-Start_Delegate_Type.ads" />
-    <None Include="raptor-Visual_Flow_Form-Win32.ads" />
-    <None Include="raptor-Visual_Flow_Form-invalidateScreen_Delegate_Type.ads" />
-    <None Include="raptor-Visual_Flow_Form-updateScreen_Delegate_Type.ads" />
-    <None Include="raptor-Visual_Flow_Form.ads" />
-    <None Include="raptor-logging_info-event_kind.ads" />
-    <None Include="raptor-logging_info-event_record.ads" />
-    <None Include="raptor-logging_info.ads" />
-    <None Include="raptor.ads" />
-    <None Include="raptor.userprefs" />
-    <None Include="raptor.usertasks" />
-    <None Include="token_helpers.adb" />
-    <None Include="token_helpers.ads" />
-    <None Include=".bzr\README" />
-    <None Include=".bzr\branch-format" />
-    <None Include=".bzr\branch\branch.conf" />
-    <None Include=".bzr\branch\format" />
-    <None Include=".bzr\branch\last-revision" />
-    <None Include=".bzr\branch\tags" />
-    <None Include=".bzr\checkout\conflicts" />
-    <None Include=".bzr\checkout\dirstate" />
-    <None Include=".bzr\checkout\format" />
-    <None Include=".bzr\checkout\views" />
-    <None Include=".bzr\repository\format" />
-    <None Include=".bzr\repository\pack-names" />
-    <None Include=".bzr\repository\indices\1bd1860d58abb090957349ea896ac560.cix" />
-    <None Include=".bzr\repository\indices\1bd1860d58abb090957349ea896ac560.iix" />
-    <None Include=".bzr\repository\indices\1bd1860d58abb090957349ea896ac560.rix" />
-    <None Include=".bzr\repository\indices\1bd1860d58abb090957349ea896ac560.six" />
-    <None Include=".bzr\repository\indices\1bd1860d58abb090957349ea896ac560.tix" />
-    <None Include=".bzr\repository\indices\5a43e8344e85b469009d5eccfcc819ef.cix" />
-    <None Include=".bzr\repository\indices\5a43e8344e85b469009d5eccfcc819ef.iix" />
-    <None Include=".bzr\repository\indices\5a43e8344e85b469009d5eccfcc819ef.rix" />
-    <None Include=".bzr\repository\indices\5a43e8344e85b469009d5eccfcc819ef.six" />
-    <None Include=".bzr\repository\indices\5a43e8344e85b469009d5eccfcc819ef.tix" />
-    <None Include=".bzr\repository\indices\78897d58f4ccadcae18a9cf68e7306a7.cix" />
-    <None Include=".bzr\repository\indices\78897d58f4ccadcae18a9cf68e7306a7.iix" />
-    <None Include=".bzr\repository\indices\78897d58f4ccadcae18a9cf68e7306a7.rix" />
-    <None Include=".bzr\repository\indices\78897d58f4ccadcae18a9cf68e7306a7.six" />
-    <None Include=".bzr\repository\indices\78897d58f4ccadcae18a9cf68e7306a7.tix" />
-    <None Include=".bzr\repository\packs\1bd1860d58abb090957349ea896ac560.pack" />
-    <None Include=".bzr\repository\packs\5a43e8344e85b469009d5eccfcc819ef.pack" />
-    <None Include=".bzr\repository\packs\78897d58f4ccadcae18a9cf68e7306a7.pack" />
-    <None Include="AssemblyImport\AssemblyImport.build" />
-    <Compile Include="AssemblyImport\ImportSettings.cs" />
-    <Compile Include="AssemblyImport\ImportSettingsForm.Designer.cs" />
-    <Compile Include="AssemblyImport\ImportSettingsForm.cs" />
-    <None Include="AssemblyImport\ImportSettingsForm.resx" />
-    <Compile Include="AssemblyImport\NETImport.cs" />
-    <Compile Include="AssemblyImport\PluginManager.cs" />
-    <None Include="AssemblyImport\app.config" />
-    <None Include="AssemblyImport\bugs.txt" />
-    <Compile Include="AssemblyImport\Properties\AssemblyInfo.cs" />
-    <Compile Include="AssemblyImport\Properties\Settings.Designer.cs" />
-    <None Include="AssemblyImport\Properties\Settings.settings" />
-    <None Include="AssemblyImport\obj\AssemblyImport.csproj.FileListAbsolute.txt" />
-    <None Include="AssemblyImport\obj\Debug\AssemblyImport.csproj.GenerateResource.Cache" />
-    <None Include="AssemblyImport\obj\Debug\NClass.AssemblyImport.ImportSettingsForm.resources" />
-    <None Include="AssemblyImport\obj\Debug\ResolveAssemblyReference.cache" />
-    <None Include="CSharp\CSharp.build" />
-    <Compile Include="CSharp\CSharpArgumentList.cs" />
-    <Compile Include="CSharp\CSharpClass.cs" />
-    <Compile Include="CSharp\CSharpConstructor.cs" />
-    <Compile Include="CSharp\CSharpDelegate.cs" />
-    <Compile Include="CSharp\CSharpDestructor.cs" />
-    <Compile Include="CSharp\CSharpEnum.cs" />
-    <Compile Include="CSharp\CSharpEnumValue.cs" />
-    <Compile Include="CSharp\CSharpEvent.cs" />
-    <Compile Include="CSharp\CSharpField.cs" />
-    <Compile Include="CSharp\CSharpInterface.cs" />
-    <Compile Include="CSharp\CSharpLanguage.cs" />
-    <Compile Include="CSharp\CSharpMethod.cs" />
-    <Compile Include="CSharp\CSharpParameter.cs" />
-    <Compile Include="CSharp\CSharpProperty.cs" />
-    <Compile Include="CSharp\CSharpStructure.cs" />
-    <None Include="CSharp\bin\Debug\NClass.CSharp.dll.mdb" />
-    <None Include="CSharp\bin\Debug\NClass.Core.dll.mdb" />
-    <None Include="CSharp\bin\Debug\NClass.Translations.dll.mdb" />
-    <None Include="CSharp\obj\CSharp.csproj.FileListAbsolute.txt" />
-    <None Include="CSharp\obj\Debug\CSharp.csproj.FileListAbsolute.txt" />
-    <None Include="CSharp\obj\Debug\ResolveAssemblyReference.cache" />
-    <None Include="CSharp\obj\Release\CSharp.csproj.FileListAbsolute.txt" />
-    <None Include="CSharp\obj\Release\ResolveAssemblyReference.cache" />
-    <Compile Include="CodeGenerator\CSharpProjectGenerator.cs" />
-    <Compile Include="CodeGenerator\CSharpSourceFileGenerator.cs" />
-    <None Include="CodeGenerator\CodeGenerator.build" />
-    <Compile Include="CodeGenerator\Dialog.Designer.cs" />
-    <Compile Include="CodeGenerator\Dialog.cs" />
-    <None Include="CodeGenerator\Dialog.resources" />
-    <None Include="CodeGenerator\Dialog.resx" />
-    <Compile Include="CodeGenerator\FileGenerationException.cs" />
-    <Compile Include="CodeGenerator\Generator.cs" />
-    <Compile Include="CodeGenerator\JavaProjectGenerator.cs" />
-    <Compile Include="CodeGenerator\JavaSourceFileGenerator.cs" />
-    <Compile Include="CodeGenerator\ProjectGenerator.cs" />
-    <Compile Include="CodeGenerator\Settings.cs" />
-    <Compile Include="CodeGenerator\SourceFileGenerator.cs" />
-    <Compile Include="CodeGenerator\Properties\Resources.Designer.cs" />
-    <None Include="CodeGenerator\Properties\Resources.resources" />
-    <None Include="CodeGenerator\Properties\Resources.resx" />
-    <None Include="CodeGenerator\Resources\delete.png" />
-    <None Include="CodeGenerator\Resources\move_down.png" />
-    <None Include="CodeGenerator\Resources\move_up.png" />
-    <None Include="CodeGenerator\bin\Debug\NClass.CSharp.dll.mdb" />
-    <None Include="CodeGenerator\bin\Debug\NClass.CodeGenerator.dll.mdb" />
-    <None Include="CodeGenerator\bin\Debug\NClass.Core.dll.mdb" />
-    <None Include="CodeGenerator\bin\Debug\NClass.Java.dll.mdb" />
-    <None Include="CodeGenerator\bin\Debug\NClass.Translations.dll.mdb" />
-    <None Include="CodeGenerator\obj\CodeGenerator.csproj.FileListAbsolute.txt" />
-    <None Include="CodeGenerator\obj\Debug\CodeGenerator.csproj.FileListAbsolute.txt" />
-    <None Include="CodeGenerator\obj\Debug\CodeGenerator.csproj.GenerateResource.Cache" />
-    <None Include="CodeGenerator\obj\Debug\NClass.CodeGenerator.Dialog.resources" />
-    <None Include="CodeGenerator\obj\Debug\NClass.CodeGenerator.Properties.Resources.resources" />
-    <None Include="CodeGenerator\obj\Debug\ResolveAssemblyReference.cache" />
-    <None Include="CodeGenerator\obj\Release\CodeGenerator.csproj.FileListAbsolute.txt" />
-    <None Include="CodeGenerator\obj\Release\CodeGenerator.csproj.GenerateResource.Cache" />
-    <None Include="CodeGenerator\obj\Release\NClass.CodeGenerator.Dialog.resources" />
-    <None Include="CodeGenerator\obj\Release\NClass.CodeGenerator.Properties.Resources.resources" />
-    <None Include="CodeGenerator\obj\Release\ResolveAssemblyReference.cache" />
-    <Compile Include="Core\AccessModifier.cs" />
-    <Compile Include="Core\BadSyntaxException.cs" />
-    <Compile Include="Core\BinarySerializationHelper.cs" />
-    <None Include="Core\Core.build" />
-    <None Include="Core\Core.csproj.user" />
-    <Compile Include="Core\DotNetLanguage.cs" />
-    <Compile Include="Core\Element.cs" />
-    <Compile Include="Core\EntityEventArgs.cs" />
-    <Compile Include="Core\IPlugin.cs" />
-    <Compile Include="Core\IProjectPlugin.cs" />
-    <Compile Include="Core\ISerializableElement.cs" />
-    <Compile Include="Core\Language.cs" />
-    <Compile Include="Core\LanguageElement.cs" />
-    <None Include="Core\NETImportSettingsForm.resx" />
-    <Compile Include="Core\ProjectCore.cs" />
-    <Compile Include="Core\RAPTORUpdater.cs" />
-    <Compile Include="Core\RelationEventArgs.cs" />
-    <Compile Include="Core\ReservedNameException.cs" />
-    <Compile Include="Core\SerializeEventArgs.cs" />
-    <Compile Include="Core\SerializeEventArgsBinary.cs" />
-    <Compile Include="Core\Entities\ClassModifier.cs" />
-    <Compile Include="Core\Entities\ClassType.cs" />
-    <Compile Include="Core\Entities\Comment.cs" />
-    <Compile Include="Core\Entities\CompositeType.cs" />
-    <Compile Include="Core\Entities\DelegateType.cs" />
-    <Compile Include="Core\Entities\EnumType.cs" />
-    <Compile Include="Core\Entities\IEntity.cs" />
-    <Compile Include="Core\Entities\IInterfaceImplementer.cs" />
-    <Compile Include="Core\Entities\InterfaceType.cs" />
-    <Compile Include="Core\Entities\SingleInharitanceType.cs" />
-    <Compile Include="Core\Entities\SortingMode.cs" />
-    <Compile Include="Core\Entities\StructureType.cs" />
-    <Compile Include="Core\Entities\TypeBase.cs" />
-    <Compile Include="Core\Members\Constructor.cs" />
-    <Compile Include="Core\Members\Destructor.cs" />
-    <Compile Include="Core\Members\EnumValue.cs" />
-    <Compile Include="Core\Members\Event.cs" />
-    <Compile Include="Core\Members\Field.cs" />
-    <Compile Include="Core\Members\FieldModifier.cs" />
-    <Compile Include="Core\Members\Member.cs" />
-    <Compile Include="Core\Members\Method.cs" />
-    <Compile Include="Core\Members\Operation.cs" />
-    <Compile Include="Core\Members\OperationModifier.cs" />
-    <Compile Include="Core\Members\Property.cs" />
-    <Compile Include="Core\Parameters\ArgumentList.cs" />
-    <Compile Include="Core\Parameters\Parameter.cs" />
-    <Compile Include="Core\Parameters\ParameterModifier.cs" />
-    <Compile Include="Core\Relations\AssociationRelation.cs" />
-    <Compile Include="Core\Relations\CommentRelation.cs" />
-    <Compile Include="Core\Relations\DependencyRelation.cs" />
-    <Compile Include="Core\Relations\Direction.cs" />
-    <Compile Include="Core\Relations\GeneralizationRelation.cs" />
-    <Compile Include="Core\Relations\NestingRelation.cs" />
-    <Compile Include="Core\Relations\RealizationRelation.cs" />
-    <Compile Include="Core\Relations\Relation.cs" />
-    <Compile Include="Core\Relations\RelationException.cs" />
-    <Compile Include="Core\Relations\TypeRelation.cs" />
-    <None Include="Core\bin\Debug\NClass.Core.dll.mdb" />
-    <None Include="Core\bin\Debug\NClass.Translations.dll.mdb" />
-    <None Include="Core\obj\Core.csproj.FileListAbsolute.txt" />
-    <None Include="Core\obj\Debug\Core.csproj.FileListAbsolute.txt" />
-    <None Include="Core\obj\Debug\ResolveAssemblyReference.cache" />
-    <None Include="Core\obj\Release\Core.csproj.FileListAbsolute.txt" />
-    <None Include="Core\obj\Release\ResolveAssemblyReference.cache" />
-    <None Include="GUI\GUI.build" />
-    <None Include="GUI\GUI.csproj.user" />
-    <Compile Include="GUI\MainForm.Designer.cs" />
-    <Compile Include="GUI\MainForm.cs" />
-    <None Include="GUI\MainForm.resources" />
-    <None Include="GUI\MainForm.resx" />
-    <Compile Include="GUI\Program.cs" />
-    <Compile Include="GUI\Settings.cs" />
-    <Compile Include="GUI\UpdatesChecker.cs" />
-    <Compile Include="GUI\ZoomingToolStrip.cs" />
-    <None Include="GUI\app.config" />
-    <None Include="GUI\nclass.ico" />
-    <Compile Include="GUI\Dialogs\AboutDialog.Designer.cs" />
-    <Compile Include="GUI\Dialogs\AboutDialog.cs" />
-    <None Include="GUI\Dialogs\AboutDialog.resources" />
-    <None Include="GUI\Dialogs\AboutDialog.resx" />
-    <Compile Include="GUI\Dialogs\DiagramSizeDialog.cs" />
-    <Compile Include="GUI\Dialogs\DiagramSizeDialog.designer.cs" />
-    <None Include="GUI\Dialogs\DiagramSizeDialog.resources" />
-    <None Include="GUI\Dialogs\DiagramSizeDialog.resx" />
-    <Compile Include="GUI\Dialogs\OptionsDialog.Designer.cs" />
-    <Compile Include="GUI\Dialogs\OptionsDialog.cs" />
-    <None Include="GUI\Dialogs\OptionsDialog.resources" />
-    <None Include="GUI\Dialogs\OptionsDialog.resx" />
-    <Compile Include="GUI\Properties\Resources.Designer.cs" />
-    <None Include="GUI\Properties\Resources.resources" />
-    <None Include="GUI\Properties\Resources.resx" />
-    <Compile Include="GUI\Properties\Settings.Designer.cs" />
-    <None Include="GUI\Properties\Settings.settings" />
-    <None Include="GUI\Resources\aggregation.png" />
-    <None Include="GUI\Resources\align_bottom.png" />
-    <None Include="GUI\Resources\align_horizontal.png" />
-    <None Include="GUI\Resources\align_left.png" />
-    <None Include="GUI\Resources\align_right.png" />
-    <None Include="GUI\Resources\align_top.png" />
-    <None Include="GUI\Resources\align_vertical.png" />
-    <None Include="GUI\Resources\association.png" />
-    <None Include="GUI\Resources\auto_layout.png" />
-    <None Include="GUI\Resources\auto_zoom.png" />
-    <None Include="GUI\Resources\class.png" />
-    <None Include="GUI\Resources\code_generator.png" />
-    <None Include="GUI\Resources\collapse_all.png" />
-    <None Include="GUI\Resources\comment.png" />
-    <None Include="GUI\Resources\composition.png" />
-    <None Include="GUI\Resources\cut.png" />
-    <None Include="GUI\Resources\delegate.png" />
-    <None Include="GUI\Resources\delete.png" />
-    <None Include="GUI\Resources\dependency.png" />
-    <None Include="GUI\Resources\diagram_size.png" />
-    <None Include="GUI\Resources\enum.png" />
-    <None Include="GUI\Resources\expand_all.png" />
-    <None Include="GUI\Resources\format.png" />
-    <None Include="GUI\Resources\generalization.png" />
-    <None Include="GUI\Resources\help.png" />
-    <None Include="GUI\Resources\image.png" />
-    <None Include="GUI\Resources\interface.png" />
-    <None Include="GUI\Resources\mail.png" />
-    <None Include="GUI\Resources\nesting.png" />
-    <None Include="GUI\Resources\new_document.png" />
-    <None Include="GUI\Resources\new_entity.png" />
-    <None Include="GUI\Resources\note.png" />
-    <None Include="GUI\Resources\open.png" />
-    <None Include="GUI\Resources\options.png" />
-    <None Include="GUI\Resources\paste.png" />
-    <None Include="GUI\Resources\print.png" />
-    <None Include="GUI\Resources\print_preview.png" />
-    <None Include="GUI\Resources\print_setup.png" />
-    <None Include="GUI\Resources\realization.png" />
-    <None Include="GUI\Resources\redo.png" />
-    <None Include="GUI\Resources\save.png" />
-    <None Include="GUI\Resources\search_web.png" />
-    <None Include="GUI\Resources\struct.png" />
-    <None Include="GUI\Resources\undo.png" />
-    <None Include="GUI\Resources\web.png" />
-    <None Include="GUI\Resources\zoom_in.png" />
-    <None Include="GUI\Resources\zoom_out.png" />
-    <None Include="GUI\bin\Debug\NClass.CSharp.dll.mdb" />
-    <None Include="GUI\bin\Debug\NClass.CodeGenerator.dll.mdb" />
-    <None Include="GUI\bin\Debug\NClass.Core.dll.mdb" />
-    <None Include="GUI\bin\Debug\NClass.Java.dll.mdb" />
-    <None Include="GUI\bin\Debug\NClass.Translations.dll.mdb" />
-    <None Include="GUI\bin\Debug\NClass.exe.config" />
-    <None Include="GUI\bin\Debug\NClass.vshost.exe.config" />
-    <None Include="GUI\bin\Debug\settings.xml" />
-    <None Include="GUI\bin\Debug\style.dst" />
-    <None Include="GUI\bin\Debug\plugins\AssemblyImport.dll.config" />
-    <None Include="GUI\bin\Release\NClass.exe.config" />
-    <None Include="GUI\obj\GUI.csproj.FileListAbsolute.txt" />
-    <None Include="GUI\obj\Debug\GUI.csproj.FileListAbsolute.txt" />
-    <None Include="GUI\obj\Debug\GUI.csproj.GenerateResource.Cache" />
-    <None Include="GUI\obj\Debug\NClass.GUI.AboutDialog.resources" />
-    <None Include="GUI\obj\Debug\NClass.GUI.DiagramSizeDialog.resources" />
-    <None Include="GUI\obj\Debug\NClass.GUI.MainForm.resources" />
-    <None Include="GUI\obj\Debug\NClass.GUI.OptionsDialog.resources" />
-    <None Include="GUI\obj\Debug\NClass.GUI.Properties.Resources.resources" />
-    <None Include="GUI\obj\Debug\ResolveAssemblyReference.cache" />
-    <None Include="GUI\obj\Release\GUI.csproj.FileListAbsolute.txt" />
-    <None Include="GUI\obj\Release\GUI.csproj.GenerateResource.Cache" />
-    <None Include="GUI\obj\Release\NClass.GUI.AboutDialog.resources" />
-    <None Include="GUI\obj\Release\NClass.GUI.DiagramSizeDialog.resources" />
-    <None Include="GUI\obj\Release\NClass.GUI.MainForm.resources" />
-    <None Include="GUI\obj\Release\NClass.GUI.OptionsDialog.resources" />
-    <None Include="GUI\obj\Release\NClass.GUI.Properties.Resources.resources" />
-    <None Include="GUI\obj\Release\ResolveAssemblyReference.cache" />
-    <Compile Include="GUI.Diagram\AbsoluteMouseEventArgs.cs" />
-    <Compile Include="GUI.Diagram\DiagramClipboard.cs" />
-    <Compile Include="GUI.Diagram\DiagramControl.Designer.cs" />
-    <Compile Include="GUI.Diagram\DiagramControl.cs" />
-    <None Include="GUI.Diagram\DiagramControl.resources" />
-    <None Include="GUI.Diagram\DiagramControl.resx" />
-    <Compile Include="GUI.Diagram\DiagramElement.cs" />
-    <None Include="GUI.Diagram\GUI.Diagram.build" />
-    <Compile Include="GUI.Diagram\IClipboardItem.cs" />
-    <Compile Include="GUI.Diagram\IDiagram.cs" />
-    <Compile Include="GUI.Diagram\IDiagramPlugin.cs" />
-    <Compile Include="GUI.Diagram\IPrintableDiagram.cs" />
-    <Compile Include="GUI.Diagram\Icons.cs" />
-    <Compile Include="GUI.Diagram\MonoHelper.cs" />
-    <Compile Include="GUI.Diagram\MoveEventArgs.cs" />
-    <Compile Include="GUI.Diagram\OrderedList.cs" />
-    <Compile Include="GUI.Diagram\Project.cs" />
-    <Compile Include="GUI.Diagram\Settings.cs" />
-    <Compile Include="GUI.Diagram\Style.cs" />
-    <Compile Include="GUI.Diagram\ToolStripSimplifiedRenderer.cs" />
-    <Compile Include="GUI.Diagram\Connections\Arrowhead.cs" />
-    <Compile Include="GUI.Diagram\Connections\Association.cs" />
-    <Compile Include="GUI.Diagram\Connections\BendPoint.cs" />
-    <Compile Include="GUI.Diagram\Connections\CommentConnection.cs" />
-    <Compile Include="GUI.Diagram\Connections\Connection.cs" />
-    <Compile Include="GUI.Diagram\Connections\Dependency.cs" />
-    <Compile Include="GUI.Diagram\Connections\Generalization.cs" />
-    <Compile Include="GUI.Diagram\Connections\Nesting.cs" />
-    <Compile Include="GUI.Diagram\Connections\Realization.cs" />
-    <Compile Include="GUI.Diagram\ContextMenus\AssociationContextMenu.cs" />
-    <Compile Include="GUI.Diagram\ContextMenus\CommentShapeContextMenu.cs" />
-    <Compile Include="GUI.Diagram\ContextMenus\ConnectionContextMenu.cs" />
-    <Compile Include="GUI.Diagram\ContextMenus\ContextMenu.cs" />
-    <Compile Include="GUI.Diagram\ContextMenus\GeneralContextMenu.cs" />
-    <Compile Include="GUI.Diagram\ContextMenus\Intersector.cs" />
-    <Compile Include="GUI.Diagram\ContextMenus\ShapeContextMenu.cs" />
-    <Compile Include="GUI.Diagram\ContextMenus\TypeShapeContextMenu.cs" />
-    <Compile Include="GUI.Diagram\Dialogs\DelegateDialog.cs" />
-    <Compile Include="GUI.Diagram\Dialogs\EditCommentDialog.Designer.cs" />
-    <Compile Include="GUI.Diagram\Dialogs\EditCommentDialog.cs" />
-    <None Include="GUI.Diagram\Dialogs\EditCommentDialog.resources" />
-    <None Include="GUI.Diagram\Dialogs\EditCommentDialog.resx" />
-    <Compile Include="GUI.Diagram\Dialogs\EnumDialog.cs" />
-    <Compile Include="GUI.Diagram\Dialogs\ImplementDialog.cs" />
-    <Compile Include="GUI.Diagram\Dialogs\ListDialog.Designer.cs" />
-    <Compile Include="GUI.Diagram\Dialogs\ListDialog.cs" />
-    <None Include="GUI.Diagram\Dialogs\ListDialog.resources" />
-    <None Include="GUI.Diagram\Dialogs\ListDialog.resx" />
-    <Compile Include="GUI.Diagram\Dialogs\MembersDialog.cs" />
-    <Compile Include="GUI.Diagram\Dialogs\MembersDialog.designer.cs" />
-    <None Include="GUI.Diagram\Dialogs\MembersDialog.resources" />
-    <None Include="GUI.Diagram\Dialogs\MembersDialog.resx" />
-    <Compile Include="GUI.Diagram\Dialogs\OverrideDialog.cs" />
-    <Compile Include="GUI.Diagram\Dialogs\PrintDialog.Designer.cs" />
-    <Compile Include="GUI.Diagram\Dialogs\PrintDialog.cs" />
-    <None Include="GUI.Diagram\Dialogs\PrintDialog.resources" />
-    <None Include="GUI.Diagram\Dialogs\PrintDialog.resx" />
-    <Compile Include="GUI.Diagram\Dialogs\TreeDialog.Designer.cs" />
-    <Compile Include="GUI.Diagram\Dialogs\TreeDialog.cs" />
-    <None Include="GUI.Diagram\Dialogs\TreeDialog.resources" />
-    <None Include="GUI.Diagram\Dialogs\TreeDialog.resx" />
-    <Compile Include="GUI.Diagram\Properties\Resources.Designer.cs" />
-    <None Include="GUI.Diagram\Properties\Resources.resources" />
-    <None Include="GUI.Diagram\Properties\Resources.resx" />
-    <None Include="GUI.Diagram\Resources\aggregation.png" />
-    <None Include="GUI.Diagram\Resources\align_bottom.png" />
-    <None Include="GUI.Diagram\Resources\align_horizontal.png" />
-    <None Include="GUI.Diagram\Resources\align_left.png" />
-    <None Include="GUI.Diagram\Resources\align_right.png" />
-    <None Include="GUI.Diagram\Resources\align_top.png" />
-    <None Include="GUI.Diagram\Resources\align_vertical.png" />
-    <None Include="GUI.Diagram\Resources\association.png" />
-    <None Include="GUI.Diagram\Resources\auto_zoom.png" />
-    <None Include="GUI.Diagram\Resources\bidirectional.png" />
-    <None Include="GUI.Diagram\Resources\class.png" />
-    <None Include="GUI.Diagram\Resources\collapse.png" />
-    <None Include="GUI.Diagram\Resources\collapsed.png" />
-    <None Include="GUI.Diagram\Resources\comment.png" />
-    <None Include="GUI.Diagram\Resources\composition.png" />
-    <None Include="GUI.Diagram\Resources\constructor.png" />
-    <None Include="GUI.Diagram\Resources\copy_as_image.png" />
-    <None Include="GUI.Diagram\Resources\cut.png" />
-    <None Include="GUI.Diagram\Resources\delegate.png" />
-    <None Include="GUI.Diagram\Resources\delete.png" />
-    <None Include="GUI.Diagram\Resources\dependency.png" />
-    <None Include="GUI.Diagram\Resources\destructor.png" />
-    <None Include="GUI.Diagram\Resources\edit_comment.png" />
-    <None Include="GUI.Diagram\Resources\edit_members.png" />
-    <None Include="GUI.Diagram\Resources\enum.png" />
-    <None Include="GUI.Diagram\Resources\enum_item.png" />
-    <None Include="GUI.Diagram\Resources\event.png" />
-    <None Include="GUI.Diagram\Resources\expand.png" />
-    <None Include="GUI.Diagram\Resources\expanded.png" />
-    <None Include="GUI.Diagram\Resources\field.png" />
-    <None Include="GUI.Diagram\Resources\format.png" />
-    <None Include="GUI.Diagram\Resources\generalization.png" />
-    <None Include="GUI.Diagram\Resources\image.png" />
-    <None Include="GUI.Diagram\Resources\implements.png" />
-    <None Include="GUI.Diagram\Resources\interface_24bits.png" />
-    <None Include="GUI.Diagram\Resources\interface_32bits.png" />
-    <None Include="GUI.Diagram\Resources\internal_const.png" />
-    <None Include="GUI.Diagram\Resources\internal_constructor.png" />
-    <None Include="GUI.Diagram\Resources\internal_event.png" />
-    <None Include="GUI.Diagram\Resources\internal_field.png" />
-    <None Include="GUI.Diagram\Resources\internal_method.png" />
-    <None Include="GUI.Diagram\Resources\internal_operator.png" />
-    <None Include="GUI.Diagram\Resources\internal_property.png" />
-    <None Include="GUI.Diagram\Resources\internal_readonly.png" />
-    <None Include="GUI.Diagram\Resources\internal_writeonly.png" />
-    <None Include="GUI.Diagram\Resources\method.png" />
-    <None Include="GUI.Diagram\Resources\move_down.png" />
-    <None Include="GUI.Diagram\Resources\move_up.png" />
-    <None Include="GUI.Diagram\Resources\nesting.png" />
-    <None Include="GUI.Diagram\Resources\new_entity.png" />
-    <None Include="GUI.Diagram\Resources\note.png" />
-    <None Include="GUI.Diagram\Resources\overrides.png" />
-    <None Include="GUI.Diagram\Resources\parameter.png" />
-    <None Include="GUI.Diagram\Resources\paste.png" />
-    <None Include="GUI.Diagram\Resources\private_const.png" />
-    <None Include="GUI.Diagram\Resources\private_constructor.png" />
-    <None Include="GUI.Diagram\Resources\private_destructor.png" />
-    <None Include="GUI.Diagram\Resources\private_event.png" />
-    <None Include="GUI.Diagram\Resources\private_field.png" />
-    <None Include="GUI.Diagram\Resources\private_method.png" />
-    <None Include="GUI.Diagram\Resources\private_operator.png" />
-    <None Include="GUI.Diagram\Resources\private_property.png" />
-    <None Include="GUI.Diagram\Resources\private_readonly.png" />
-    <None Include="GUI.Diagram\Resources\private_writeonly.png" />
-    <None Include="GUI.Diagram\Resources\property.png" />
-    <None Include="GUI.Diagram\Resources\protected_const.png" />
-    <None Include="GUI.Diagram\Resources\protected_constructor.png" />
-    <None Include="GUI.Diagram\Resources\protected_event.png" />
-    <None Include="GUI.Diagram\Resources\protected_field.png" />
-    <None Include="GUI.Diagram\Resources\protected_method.png" />
-    <None Include="GUI.Diagram\Resources\protected_operator.png" />
-    <None Include="GUI.Diagram\Resources\protected_property.png" />
-    <None Include="GUI.Diagram\Resources\protected_readonly.png" />
-    <None Include="GUI.Diagram\Resources\protected_writeonly.png" />
-    <None Include="GUI.Diagram\Resources\protint_const.png" />
-    <None Include="GUI.Diagram\Resources\protint_constructor.png" />
-    <None Include="GUI.Diagram\Resources\protint_event.png" />
-    <None Include="GUI.Diagram\Resources\protint_field.png" />
-    <None Include="GUI.Diagram\Resources\protint_method.png" />
-    <None Include="GUI.Diagram\Resources\protint_operator.png" />
-    <None Include="GUI.Diagram\Resources\protint_property.png" />
-    <None Include="GUI.Diagram\Resources\protint_readonly.png" />
-    <None Include="GUI.Diagram\Resources\protint_writeonly.png" />
-    <None Include="GUI.Diagram\Resources\public_const.png" />
-    <None Include="GUI.Diagram\Resources\public_constructor.png" />
-    <None Include="GUI.Diagram\Resources\public_event.png" />
-    <None Include="GUI.Diagram\Resources\public_field.png" />
-    <None Include="GUI.Diagram\Resources\public_method.png" />
-    <None Include="GUI.Diagram\Resources\public_operator.png" />
-    <None Include="GUI.Diagram\Resources\public_property.png" />
-    <None Include="GUI.Diagram\Resources\public_readonly.png" />
-    <None Include="GUI.Diagram\Resources\public_writeonly.png" />
-    <None Include="GUI.Diagram\Resources\realization.png" />
-    <None Include="GUI.Diagram\Resources\sort_by_access.png" />
-    <None Include="GUI.Diagram\Resources\sort_by_kind.png" />
-    <None Include="GUI.Diagram\Resources\sort_by_name.png" />
-    <None Include="GUI.Diagram\Resources\struct.png" />
-    <None Include="GUI.Diagram\Resources\unidirectional.png" />
-    <None Include="GUI.Diagram\Resources\zoom.png" />
-    <None Include="GUI.Diagram\Resources\zoom_in.png" />
-    <None Include="GUI.Diagram\Resources\zoom_out.png" />
-    <Compile Include="GUI.Diagram\Shapes\ClassShape.cs" />
-    <Compile Include="GUI.Diagram\Shapes\CommentShape.cs" />
-    <Compile Include="GUI.Diagram\Shapes\CompositeTypeShape.cs" />
-    <Compile Include="GUI.Diagram\Shapes\DelegateShape.cs" />
-    <Compile Include="GUI.Diagram\Shapes\DiagramShape.cs" />
-    <Compile Include="GUI.Diagram\Shapes\EnumShape.cs" />
-    <Compile Include="GUI.Diagram\Shapes\InterfaceShape.cs" />
-    <Compile Include="GUI.Diagram\Shapes\ResizeEventArgs.cs" />
-    <Compile Include="GUI.Diagram\Shapes\StructShape.cs" />
-    <Compile Include="GUI.Diagram\Shapes\TypeShape.cs" />
-    <None Include="GUI.Diagram\bin\Debug\NClass.Core.dll.mdb" />
-    <None Include="GUI.Diagram\bin\Debug\NClass.GUI.Diagram.dll.mdb" />
-    <None Include="GUI.Diagram\bin\Debug\NClass.Translations.dll.mdb" />
-    <None Include="GUI.Diagram\obj\GUI.Diagram.csproj.FileListAbsolute.txt" />
-    <None Include="GUI.Diagram\obj\Debug\GUI.Diagram.csproj.FileListAbsolute.txt" />
-    <None Include="GUI.Diagram\obj\Debug\GUI.Diagram.csproj.GenerateResource.Cache" />
-    <None Include="GUI.Diagram\obj\Debug\NClass.GUI.Diagram.DiagramControl.resources" />
-    <None Include="GUI.Diagram\obj\Debug\NClass.GUI.Diagram.EditCommentDialog.resources" />
-    <None Include="GUI.Diagram\obj\Debug\NClass.GUI.Diagram.ListDialog.resources" />
-    <None Include="GUI.Diagram\obj\Debug\NClass.GUI.Diagram.MembersDialog.resources" />
-    <None Include="GUI.Diagram\obj\Debug\NClass.GUI.Diagram.PrintDialog.resources" />
-    <None Include="GUI.Diagram\obj\Debug\NClass.GUI.Diagram.Properties.Resources.resources" />
-    <None Include="GUI.Diagram\obj\Debug\NClass.GUI.Diagram.TreeDialog.resources" />
-    <None Include="GUI.Diagram\obj\Debug\ResolveAssemblyReference.cache" />
-    <None Include="GUI.Diagram\obj\Release\GUI.Diagram.csproj.FileListAbsolute.txt" />
-    <None Include="GUI.Diagram\obj\Release\GUI.Diagram.csproj.GenerateResource.Cache" />
-    <None Include="GUI.Diagram\obj\Release\NClass.GUI.Diagram.DiagramControl.resources" />
-    <None Include="GUI.Diagram\obj\Release\NClass.GUI.Diagram.EditCommentDialog.resources" />
-    <None Include="GUI.Diagram\obj\Release\NClass.GUI.Diagram.ListDialog.resources" />
-    <None Include="GUI.Diagram\obj\Release\NClass.GUI.Diagram.MembersDialog.resources" />
-    <None Include="GUI.Diagram\obj\Release\NClass.GUI.Diagram.PrintDialog.resources" />
-    <None Include="GUI.Diagram\obj\Release\NClass.GUI.Diagram.Properties.Resources.resources" />
-    <None Include="GUI.Diagram\obj\Release\NClass.GUI.Diagram.TreeDialog.resources" />
-    <Compile Include="GeneratorAda\AdaGenerator.cs" />
-    <Compile Include="GeneratorAda\CplusGenerator.cs" />
-    <Compile Include="GeneratorAda\CsharpGenerator.cs" />
-    <Compile Include="GeneratorAda\Generate_Hash.cs" />
-    <Compile Include="GeneratorAda\IT105JavaGenerator.cs" />
-    <Compile Include="GeneratorAda\Imperative_Interface.cs" />
-    <Compile Include="GeneratorAda\JavaGenerator.cs" />
-    <Compile Include="GeneratorAda\OO_Interface.cs" />
-    <Compile Include="GeneratorAda\Properties\AssemblyInfo.cs" />
-    <None Include="GeneratorAda\bin\Debug\NClass.Core.dll.mdb" />
-    <None Include="GeneratorAda\bin\Debug\NClass.Translations.dll.mdb" />
-    <None Include="GeneratorAda\obj\Debug\GeneratorAda.csproj.FileListAbsolute.txt" />
-    <None Include="GeneratorAda\obj\Debug\ResolveAssemblyReference.cache" />
-    <None Include="GeneratorAda\obj\Release\GeneratorAda.csproj.FileListAbsolute.txt" />
-    <None Include="GeneratorAda\obj\Release\ResolveAssemblyReference.cache" />
-    <None Include="Java\Java.build" />
-    <Compile Include="Java\Java.cs" />
-    <Compile Include="Java\JavaArgumentList.cs" />
-    <Compile Include="Java\JavaClass.cs" />
-    <Compile Include="Java\JavaConstructor.cs" />
-    <Compile Include="Java\JavaEnum.cs" />
-    <Compile Include="Java\JavaEnumValue.cs" />
-    <Compile Include="Java\JavaField.cs" />
-    <Compile Include="Java\JavaInterface.cs" />
-    <Compile Include="Java\JavaLanguage.cs" />
-    <Compile Include="Java\JavaMethod.cs" />
-    <Compile Include="Java\JavaParameter.cs" />
-    <None Include="Java\bin\Debug\NClass.Core.dll.mdb" />
-    <None Include="Java\bin\Debug\NClass.Java.dll.mdb" />
-    <None Include="Java\bin\Debug\NClass.Translations.dll.mdb" />
-    <None Include="Java\obj\Java.csproj.FileListAbsolute.txt" />
-    <None Include="Java\obj\Debug\Java.csproj.FileListAbsolute.txt" />
-    <None Include="Java\obj\Debug\ResolveAssemblyReference.cache" />
-    <None Include="Java\obj\Release\Java.csproj.FileListAbsolute.txt" />
-    <Compile Include="Translations\Strings.cs" />
-    <None Include="Translations\Strings.es.resources" />
-    <None Include="Translations\Strings.es.resx" />
-    <None Include="Translations\Strings.hu.resources" />
-    <None Include="Translations\Strings.hu.resx" />
-    <None Include="Translations\Strings.pt-BR.resources" />
-    <None Include="Translations\Strings.pt-BR.resx" />
-    <None Include="Translations\Strings.resources" />
-    <None Include="Translations\Strings.resx" />
-    <None Include="Translations\Strings.ru.resources" />
-    <None Include="Translations\Strings.ru.resx" />
-    <None Include="Translations\Translations.build" />
-    <None Include="Translations\Translations.csproj.user" />
-    <None Include="Translations\bin\Debug\NClass.Translations.dll.mdb" />
-    <None Include="Translations\obj\Translations.csproj.FileListAbsolute.txt" />
-    <None Include="Translations\obj\Debug\NClass.Translations.Strings.es.resources" />
-    <None Include="Translations\obj\Debug\NClass.Translations.Strings.hu.resources" />
-    <None Include="Translations\obj\Debug\NClass.Translations.Strings.pt-BR.resources" />
-    <None Include="Translations\obj\Debug\NClass.Translations.Strings.resources" />
-    <None Include="Translations\obj\Debug\NClass.Translations.Strings.ru.resources" />
-    <None Include="Translations\obj\Debug\Translations.csproj.FileListAbsolute.txt" />
-    <None Include="Translations\obj\Debug\Translations.csproj.GenerateResource.Cache" />
-    <None Include="Translations\obj\Release\NClass.Translations.Strings.es.resources" />
-    <None Include="Translations\obj\Release\NClass.Translations.Strings.hu.resources" />
-    <None Include="Translations\obj\Release\NClass.Translations.Strings.pt-BR.resources" />
-    <None Include="Translations\obj\Release\NClass.Translations.Strings.resources" />
-    <None Include="Translations\obj\Release\NClass.Translations.Strings.ru.resources" />
-    <None Include="Translations\obj\Release\Translations.csproj.FileListAbsolute.txt" />
-    <None Include="Translations\obj\Release\Translations.csproj.GenerateResource.Cache" />
-    <None Include="_UpgradeReport_Files\UpgradeReport.css" />
-    <None Include="_UpgradeReport_Files\UpgradeReport.xslt" />
-    <None Include="_UpgradeReport_Files\UpgradeReport_Minus.gif" />
-    <None Include="_UpgradeReport_Files\UpgradeReport_Plus.gif" />
-    <None Include="bin\Debug\raptor.exe.config" />
-    <None Include="bin\Debug\raptor.vshost.exe.config" />
-    <None Include="bin\Debug\raptor.vshost.exe.manifest" />
-    <None Include="bin\Debug\style.dst" />
-    <None Include="bin\Release\hi.txt" />
-    <None Include="bin\Release\raptor.exe.config" />
-    <None Include="bin\Release\raptor.vshost.exe.config" />
-    <None Include="bin\Release\raptor.vshost.exe.manifest" />
-    <None Include="bin\Release\style.dst" />
-    <Compile Include="dotnetgraph\dotnetgraph.cs" />
-    <None Include="dotnetgraph\dotnetgraph.csproj.user" />
-    <Compile Include="dotnetgraph\dotnetgraph.designer.cs" />
-    <None Include="dotnetgraph\dotnetgraph.resources" />
-    <None Include="dotnetgraph\dotnetgraph.resx" />
-    <Compile Include="dotnetgraph\Properties\AssemblyInfo.cs" />
-    <None Include="dotnetgraph\bin\Debug\dotnetgraph.dll.mdb" />
-    <None Include="dotnetgraph\obj\Debug\dotnetgraph.csproj.FileListAbsolute.txt" />
-    <None Include="dotnetgraph\obj\Debug\dotnetgraph.csproj.GenerateResource.Cache" />
-    <None Include="dotnetgraph\obj\Debug\dotnetgraphlibrary.dotnetgraph.resources" />
-    <None Include="dotnetgraph\obj\Release\dotnetgraph.csproj.FileListAbsolute.txt" />
-    <None Include="dotnetgraph\obj\Release\dotnetgraph.csproj.GenerateResource.Cache" />
-    <None Include="dotnetgraph\obj\Release\dotnetgraphlibrary.dotnetgraph.resources" />
-    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
-    <None Include="obj\Debug\raptor.Assignment_Dlg.resources" />
-    <None Include="obj\Debug\raptor.BARTPEFileOpenList.resources" />
-    <None Include="obj\Debug\raptor.BARTPEFileSaveList.resources" />
-    <None Include="obj\Debug\raptor.Buffered.resources" />
-    <None Include="obj\Debug\raptor.Call_Dialog.resources" />
-    <None Include="obj\Debug\raptor.ClassTabPage.resources" />
-    <None Include="obj\Debug\raptor.Comment_Dlg.resources" />
-    <None Include="obj\Debug\raptor.Control_Dlg.resources" />
-    <None Include="obj\Debug\raptor.EmergencyDialog.resources" />
-    <None Include="obj\Debug\raptor.HelpForm.resources" />
-    <None Include="obj\Debug\raptor.Input_Dlg.resources" />
-    <None Include="obj\Debug\raptor.MasterConsole.resources" />
-    <None Include="obj\Debug\raptor.Output_Dlg.resources" />
-    <None Include="obj\Debug\raptor.Procedure_name.resources" />
-    <None Include="obj\Debug\raptor.PromptForm.resources" />
-    <None Include="obj\Debug\raptor.Properties.Resources.resources" />
-    <None Include="obj\Debug\raptor.Return_Dlg.resources" />
-    <None Include="obj\Debug\raptor.Subchart.resources" />
-    <None Include="obj\Debug\raptor.Subchart_name.resources" />
-    <None Include="obj\Debug\raptor.SubmitServerForm.resources" />
-    <None Include="obj\Debug\raptor.UMLDiagram.resources" />
-    <None Include="obj\Debug\raptor.UserControl1.resources" />
-    <None Include="obj\Debug\raptor.Visual_Flow_Form.resources" />
-    <None Include="obj\Debug\raptor.csproj.FileListAbsolute.txt" />
-    <None Include="obj\Debug\raptor.csproj.GenerateResource.Cache" />
-    <None Include="obj\Release\ResolveAssemblyReference.cache" />
-    <None Include="obj\Release\raptor.Assignment_Dlg.resources" />
-    <None Include="obj\Release\raptor.BARTPEFileOpenList.resources" />
-    <None Include="obj\Release\raptor.BARTPEFileSaveList.resources" />
-    <None Include="obj\Release\raptor.Buffered.resources" />
-    <None Include="obj\Release\raptor.Call_Dialog.resources" />
-    <None Include="obj\Release\raptor.ClassTabPage.resources" />
-    <None Include="obj\Release\raptor.Comment_Dlg.resources" />
-    <None Include="obj\Release\raptor.Control_Dlg.resources" />
-    <None Include="obj\Release\raptor.EmergencyDialog.resources" />
-    <None Include="obj\Release\raptor.HelpForm.resources" />
-    <None Include="obj\Release\raptor.Input_Dlg.resources" />
-    <None Include="obj\Release\raptor.MasterConsole.resources" />
-    <None Include="obj\Release\raptor.Output_Dlg.resources" />
-    <None Include="obj\Release\raptor.Procedure_name.resources" />
-    <None Include="obj\Release\raptor.PromptForm.resources" />
-    <None Include="obj\Release\raptor.Properties.Resources.resources" />
-    <None Include="obj\Release\raptor.Return_Dlg.resources" />
-    <None Include="obj\Release\raptor.Subchart.resources" />
-    <None Include="obj\Release\raptor.Subchart_name.resources" />
-    <None Include="obj\Release\raptor.SubmitServerForm.resources" />
-    <None Include="obj\Release\raptor.UMLDiagram.resources" />
-    <None Include="obj\Release\raptor.UserControl1.resources" />
-    <None Include="obj\Release\raptor.Visual_Flow_Form.resources" />
-    <None Include="obj\Release\raptor.csproj.FileListAbsolute.txt" />
-    <None Include="obj\Release\raptor.csproj.GenerateResource.Cache" />
-    <None Include="samples\Baseball (compiled).rap" />
-    <None Include="samples\Baseball.rap" />
-    <None Include="samples\BestOfM2A.rap" />
-    <None Include="samples\BestOfM3A.rap" />
-    <None Include="samples\BestOfM4A (compiled).rap" />
-    <None Include="samples\BestOfM4A.rap" />
-    <None Include="samples\Checkers (compiled).rap" />
-    <None Include="samples\Checkers.rap" />
-    <None Include="samples\DoubleSlit.rap" />
-    <None Include="samples\DoubleSlitReal.rap" />
-    <None Include="samples\EC Radial PONG Journal.doc" />
-    <None Include="samples\Missile Command (compiled).rap" />
-    <None Include="samples\RAPTOR colors.rap" />
-    <None Include="samples\RadialMouse (compiled).rap" />
-    <None Include="samples\RadialMouse.rap" />
-    <None Include="samples\SingleSlit.rap" />
-    <None Include="samples\Super_Pacman (compiled).rap" />
-    <None Include="samples\Super_Pacman.rap" />
-    <None Include="samples\bob.rap" />
-    <None Include="samples\bob.rap.backup0" />
-    <None Include="samples\bob.rap.backup1" />
-    <None Include="samples\bob.rap.backup2" />
-    <None Include="samples\bob.rap.backup3" />
-    <None Include="samples\clock.rap" />
-    <None Include="samples\count_down.rap" />
-    <None Include="samples\death.wav" />
-    <None Include="samples\drawing.rap" />
-    <None Include="samples\fib_numbers.rap" />
-    <None Include="samples\fib_numbers.rap.backup0" />
-    <None Include="samples\first.rap" />
-    <None Include="samples\first.rap.backup0" />
-    <None Include="samples\first.rap.backup1" />
-    <None Include="samples\first.rap.backup2" />
-    <None Include="samples\follow_cursor.rap" />
-    <None Include="samples\intro.wav" />
-    <None Include="samples\missile command.rap" />
-    <None Include="samples\munch.wav" />
-    <None Include="samples\pacman.rap" />
-    <None Include="samples\plugins.res" />
-    <None Include="samples\pond_scene.rap" />
-    <None Include="samples\sample1.rap" />
-    <None Include="samples\sample1.rap.backup0" />
-    <None Include="samples\sample1.rap.backup1" />
-    <None Include="samples\sample1.rap.backup2" />
-    <None Include="samples\sort.rap" />
-    <None Include="samples\test_keydown.rap" />
-    <None Include="samples\third.rap" />
-    <None Include="samples\tic_tac_toe.adb" />
-    <None Include="samples\tic_tac_toe.rap" />
-    <None Include="samples\tic_tac_toe.rap.backup0" />
-    <None Include="samples\Mario\B-2.jpg" />
-    <None Include="samples\Mario\Coin.wav" />
-    <None Include="samples\Mario\F-22.jpg" />
-    <None Include="samples\Mario\Game Over.wav" />
-    <None Include="samples\Mario\Mario Jump.wav" />
-    <None Include="samples\Mario\Mario Riff.wav" />
-    <None Include="samples\Mario\Mario left.bmp" />
-    <None Include="samples\Mario\Mario map.bmp" />
-    <None Include="samples\Mario\Mario mapb.bmp" />
-    <None Include="samples\Mario\Mario parachute.bmp" />
-    <None Include="samples\Mario\Mario right.bmp" />
-    <None Include="samples\Mario\Win Stage.wav" />
-    <None Include="samples\Mario\bomb-03.wav" />
-    <None Include="samples\Mario\explosion-05.wav" />
-    <None Include="samples\Mario\nuke.jpg" />
-    <None Include="samples\Mario\plane crash.JPG" />
-    <None Include="samples\Mario\plane-crash-01.wav" />
-    <None Include="samples\Mario\spiny left.bmp" />
-    <None Include="samples\Mario\spiny right.bmp" />
-    <None Include="samples\Snake\Snake.rap" />
-    <None Include="samples\Snake\Misc\instructions.bmp" />
-    <None Include="samples\Snake\Misc\map.bmp" />
-    <None Include="samples\Snake\Misc\mouse.bmp" />
-    <None Include="samples\Snake\Misc\navigation.bmp" />
-    <None Include="samples\Snake\Misc\scope.bmp" />
-    <None Include="samples\Snake\Misc\top.bmp" />
-    <None Include="samples\Snake\Numbers\1.bmp" />
-    <None Include="samples\Snake\Numbers\10.bmp" />
-    <None Include="samples\Snake\Numbers\2.bmp" />
-    <None Include="samples\Snake\Numbers\3.bmp" />
-    <None Include="samples\Snake\Numbers\4.bmp" />
-    <None Include="samples\Snake\Numbers\5.bmp" />
-    <None Include="samples\Snake\Numbers\6.bmp" />
-    <None Include="samples\Snake\Numbers\7.bmp" />
-    <None Include="samples\Snake\Numbers\8.bmp" />
-    <None Include="samples\Snake\Numbers\9.bmp" />
-    <None Include="samples\Snake\Numbers\Time.bmp" />
-    <None Include="samples\Snake\SnakeBody\1Snake.bmp" />
-    <None Include="samples\Snake\SnakeBody\2Snake.bmp" />
-    <None Include="samples\Snake\SnakeBody\3Snake.bmp" />
-    <None Include="samples\Snake\SnakeBody\4Snake.bmp" />
-    <None Include="samples\Snake\SnakeBody\BLCorner.bmp" />
-    <None Include="samples\Snake\SnakeBody\BRCorner.bmp" />
-    <None Include="samples\Snake\SnakeBody\TLCorner.bmp" />
-    <None Include="samples\Snake\SnakeBody\TRCorner.bmp" />
-    <None Include="samples\Snake\SnakeBody\V1Snake.bmp" />
-    <None Include="samples\Snake\SnakeBody\V2Snake.bmp" />
-    <None Include="samples\Snake\SnakeBody\V3Snake.bmp" />
-    <None Include="samples\Snake\SnakeBody\V4Snake.bmp" />
-    <None Include="samples\Snake\SnakeHead\DHead.bmp" />
-    <None Include="samples\Snake\SnakeHead\LHead.bmp" />
-    <None Include="samples\Snake\SnakeHead\RHead.bmp" />
-    <None Include="samples\Snake\SnakeHead\UHead.bmp" />
-    <None Include="samples\Snake\SnakeTail\DTail.bmp" />
-    <None Include="samples\Snake\SnakeTail\LTail.bmp" />
-    <None Include="samples\Snake\SnakeTail\RTail.bmp" />
-    <None Include="samples\Snake\SnakeTail\UTail.bmp" />
-    <None Include="samples\Snake\Sound\Death5.wav" />
-    <None Include="samples\Snake\Sound\Eat1.wav" />
-    <None Include="samples\Snake\Sound\Eat5.wav" />
-    <None Include="samples\data\Lineup_Angels.txt" />
-    <None Include="samples\data\Lineup_Astros.txt" />
-    <None Include="samples\data\Lineup_Athletics.txt" />
-    <None Include="samples\data\Lineup_Blue_Jays.txt" />
-    <None Include="samples\data\Lineup_Braves.txt" />
-    <None Include="samples\data\Lineup_Brewers.txt" />
-    <None Include="samples\data\Lineup_Cardinals.txt" />
-    <None Include="samples\data\Lineup_Cubs.txt" />
-    <None Include="samples\data\Lineup_Devil_Rays.txt" />
-    <None Include="samples\data\Lineup_Diamondbacks.txt" />
-    <None Include="samples\data\Lineup_Dodgers.txt" />
-    <None Include="samples\data\Lineup_Giants.txt" />
-    <None Include="samples\data\Lineup_Indians.txt" />
-    <None Include="samples\data\Lineup_Mariners.txt" />
-    <None Include="samples\data\Lineup_Marlins.txt" />
-    <None Include="samples\data\Lineup_Mets.txt" />
-    <None Include="samples\data\Lineup_Nationals.txt" />
-    <None Include="samples\data\Lineup_Orioles.txt" />
-    <None Include="samples\data\Lineup_Padres.txt" />
-    <None Include="samples\data\Lineup_Phillies.txt" />
-    <None Include="samples\data\Lineup_Pirates.txt" />
-    <None Include="samples\data\Lineup_Rangers.txt" />
-    <None Include="samples\data\Lineup_Red_Sox.txt" />
-    <None Include="samples\data\Lineup_Reds.txt" />
-    <None Include="samples\data\Lineup_Rockies.txt" />
-    <None Include="samples\data\Lineup_Royals.txt" />
-    <None Include="samples\data\Lineup_Tigers.txt" />
-    <None Include="samples\data\Lineup_Twins.txt" />
-    <None Include="samples\data\Lineup_White_Sox.txt" />
-    <None Include="samples\data\Lineup_Yankees.txt" />
-    <None Include="samples\data\RBT.jpg" />
-    <None Include="samples\data\ana.gif" />
-    <None Include="samples\data\ari.gif" />
-    <None Include="samples\data\atl.gif" />
-    <None Include="samples\data\bal.gif" />
-    <None Include="samples\data\baseball_hit.wav" />
-    <None Include="samples\data\bg_music.wav" />
-    <None Include="samples\data\blank.bmp" />
-    <None Include="samples\data\bos.gif" />
-    <None Include="samples\data\caughtball.wav" />
-    <None Include="samples\data\caughtball2.wav" />
-    <None Include="samples\data\cha.gif" />
-    <None Include="samples\data\chn.gif" />
-    <None Include="samples\data\cin.gif" />
-    <None Include="samples\data\cle.gif" />
-    <None Include="samples\data\col.gif" />
-    <None Include="samples\data\data.txt" />
-    <None Include="samples\data\det.gif" />
-    <None Include="samples\data\fla.gif" />
-    <None Include="samples\data\hou.gif" />
-    <None Include="samples\data\kan.gif" />
-    <None Include="samples\data\los.gif" />
-    <None Include="samples\data\matchup.gif" />
-    <None Include="samples\data\mil.gif" />
-    <None Include="samples\data\min.gif" />
-    <None Include="samples\data\notes.txt" />
-    <None Include="samples\data\nym.gif" />
-    <None Include="samples\data\nyy.gif" />
-    <None Include="samples\data\oak.gif" />
-    <None Include="samples\data\phi.gif" />
-    <None Include="samples\data\pit.gif" />
-    <None Include="samples\data\s_ana.gif" />
-    <None Include="samples\data\s_ari.gif" />
-    <None Include="samples\data\s_atl.gif" />
-    <None Include="samples\data\s_bal.gif" />
-    <None Include="samples\data\s_bos.gif" />
-    <None Include="samples\data\s_cha.gif" />
-    <None Include="samples\data\s_chn.gif" />
-    <None Include="samples\data\s_cin.gif" />
-    <None Include="samples\data\s_cle.gif" />
-    <None Include="samples\data\s_col.gif" />
-    <None Include="samples\data\s_det.gif" />
-    <None Include="samples\data\s_fla.gif" />
-    <None Include="samples\data\s_hou.gif" />
-    <None Include="samples\data\s_kan.gif" />
-    <None Include="samples\data\s_los.gif" />
-    <None Include="samples\data\s_mil.gif" />
-    <None Include="samples\data\s_min.gif" />
-    <None Include="samples\data\s_nym.gif" />
-    <None Include="samples\data\s_nyy.gif" />
-    <None Include="samples\data\s_oak.gif" />
-    <None Include="samples\data\s_phi.gif" />
-    <None Include="samples\data\s_pit.gif" />
-    <None Include="samples\data\s_sdg.gif" />
-    <None Include="samples\data\s_sea.gif" />
-    <None Include="samples\data\s_sfo.gif" />
-    <None Include="samples\data\s_stl.gif" />
-    <None Include="samples\data\s_tam.gif" />
-    <None Include="samples\data\s_tex.gif" />
-    <None Include="samples\data\s_tor.gif" />
-    <None Include="samples\data\s_was.gif" />
-    <None Include="samples\data\sdg.gif" />
-    <None Include="samples\data\sea.gif" />
-    <None Include="samples\data\sfo.gif" />
-    <None Include="samples\data\stl.gif" />
-    <None Include="samples\data\stop.wav" />
-    <None Include="samples\data\tam.gif" />
-    <None Include="samples\data\tex.gif" />
-    <None Include="samples\data\tor.gif" />
-    <None Include="samples\data\was.gif" />
-    <None Include="setup1\Setup1.vdproj" />
-    <None Include="setup1\Setup1.vdproj.vspscc" />
-    <None Include="tests\test_compile_is_string (compiled).rap" />
-    <None Include="tests\test_compile_is_string.rap" />
-    <None Include="tests\test_draw_line.rap" />
-    <None Include="tests\test_draw_line.rap.backup0" />
-    <None Include="tests\test_draw_line.rap.backup1" />
-    <None Include="tests\test_draw_line.rap.backup2" />
-    <None Include="tests\test_output.rap" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="CodeGenerator\CodeGenerator.csproj">

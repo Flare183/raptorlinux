@@ -85,5 +85,5 @@ private
    pragma Import(MSIL,setText,"setText");
 end raptor.Oval;
 pragma Import(MSIL,raptor.Oval,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Oval");

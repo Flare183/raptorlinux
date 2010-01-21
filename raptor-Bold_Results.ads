@@ -31,5 +31,5 @@ private
    pragma MSIL_Constructor(new_Bold_Results);
 end raptor.Bold_Results;
 pragma Import(MSIL,raptor.Bold_Results,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Bold_Results");

@@ -125,5 +125,5 @@ private
    pragma MSIL_Constructor(new_Assignment_Dlg);
 end raptor.Assignment_Dlg;
 pragma Import(MSIL,raptor.Assignment_Dlg,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Assignment_Dlg");

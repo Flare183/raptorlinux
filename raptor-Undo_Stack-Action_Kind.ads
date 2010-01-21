@@ -60,5 +60,5 @@ private
    pragma Import(MSIL,ToString,"ToString");
 end raptor.Undo_Stack.Action_Kind;
 pragma Import(MSIL,raptor.Undo_Stack.Action_Kind,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Undo_Stack/Action_Kind");

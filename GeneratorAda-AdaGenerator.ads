@@ -6,6 +6,7 @@
 with MSSyst.Object;
 with MSIL_Types;
 use MSIL_Types;
+with GeneratorAda.Imperative_Interface;
 limited with MSSyst.String;
 limited with MSSyst.Type_k;
 with generate_interface.typ;
@@ -16,6 +17,7 @@ limited with parse_tree.expression;
 limited with parse_tree.parameter_list;
 package GeneratorAda.AdaGenerator is
    type Typ is new MSSyst.Object.Typ
+         and GeneratorAda.Imperative_Interface.Typ
          and generate_interface.typ.Typ
    with record
       null;

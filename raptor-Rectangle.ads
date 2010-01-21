@@ -118,5 +118,5 @@ private
    pragma Import(MSIL,wide_footprint,"wide_footprint");
 end raptor.Rectangle;
 pragma Import(MSIL,raptor.Rectangle,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Rectangle");

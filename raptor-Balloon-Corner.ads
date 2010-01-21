@@ -60,5 +60,5 @@ private
    pragma Import(MSIL,ToString,"ToString");
 end raptor.Balloon.Corner;
 pragma Import(MSIL,raptor.Balloon.Corner,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Balloon/Corner");

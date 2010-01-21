@@ -33,5 +33,5 @@ private
    pragma Import(MSIL,Clone,"Clone");
 end raptor.Component.FootPrint;
 pragma Import(MSIL,raptor.Component.FootPrint,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Component/FootPrint");

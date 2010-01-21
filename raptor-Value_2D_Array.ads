@@ -57,5 +57,5 @@ private
    pragma Import(MSIL,Set_Value,"Set_Value");
 end raptor.Value_2D_Array;
 pragma Import(MSIL,raptor.Value_2D_Array,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Value_2D_Array");

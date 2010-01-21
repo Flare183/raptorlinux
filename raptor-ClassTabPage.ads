@@ -106,5 +106,5 @@ private
    pragma MSIL_Constructor(new_ClassTabPage);
 end raptor.ClassTabPage;
 pragma Import(MSIL,raptor.ClassTabPage,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.ClassTabPage");

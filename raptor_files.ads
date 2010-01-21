@@ -5,7 +5,7 @@ with MSSyst.Diagnostics.Process;
 package Raptor_Files is
    procedure Redirect_Input(Filename : in MSSyst.String.Ref);
    procedure Stop_Redirect_Input;
-   procedure Redirect_Output(Filename : in MSSyst.String.Ref);
+   procedure Redirect_Output(Filename : in MSSyst.String.Ref; Append : in Boolean);
    procedure Stop_Redirect_Output;
    function End_Of_Input return Boolean;
    function Input_Redirected return Boolean;

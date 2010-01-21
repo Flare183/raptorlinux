@@ -136,5 +136,5 @@ private
    pragma Import(MSIL,Kill_Delegate,"Kill_Delegate");
 end raptor.PromptForm;
 pragma Import(MSIL,raptor.PromptForm,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.PromptForm");

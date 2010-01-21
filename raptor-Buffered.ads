@@ -102,5 +102,5 @@ private
    pragma MSIL_Constructor(new_Buffered);
 end raptor.Buffered;
 pragma Import(MSIL,raptor.Buffered,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Buffered");

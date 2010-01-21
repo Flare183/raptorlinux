@@ -93,6 +93,11 @@ package body Suggestions is
                Bold_Start := 11;
                Bold_Finish := 17;
             end if;
+         when Set_Precision =>
+            if Comma_Count = 0 then
+               Bold_Start := 15;
+               Bold_Finish := 23;
+            end if;
          when Redirect_Input =>
             if Comma_Count = 0 then
                Bold_Start := 16;
@@ -102,6 +107,11 @@ package body Suggestions is
             if Comma_Count = 0 then
                Bold_Start := 17;
                Bold_Finish := 36;
+            end if;
+         when Redirect_Output_Append =>
+            if Comma_Count = 0 then
+               Bold_Start := 24;
+               Bold_Finish := 43;
             end if;
          when Closest_Color =>
             if Comma_Count = 0 then
@@ -642,10 +652,12 @@ begin
       Closest_Color         => Mssyst.String.Ref (+ "Closest_Color(red,green,blue)"),
       Redirect_Input        => Mssyst.String.Ref (+ "Redirect_Input(yes/no or ""filename"")"),
       Redirect_Output       => Mssyst.String.Ref (+ "Redirect_Output(yes/no or ""filename"")"),
+      Redirect_Output_Append=> Mssyst.String.Ref (+ "Redirect_Output_Append(yes/no or ""filename"")"),
       Freeze_Graph_Window   => Mssyst.String.Ref (+ "Freeze_Graph_Window"),
       Unfreeze_Graph_Window => Mssyst.String.Ref (+ "Unfreeze_Graph_Window"),
       Update_Graph_Window   => Mssyst.String.Ref (+ "Update_Graph_Window"),
       Delay_For             => Mssyst.String.Ref (+ "delay_for(seconds)"),
+      Set_Precision         => Mssyst.String.Ref (+ "Set_Precision(precision)"),
       Get_Max_Width         => Mssyst.String.Ref (+ "Get_Max_Width"),
       Get_Max_Height        => Mssyst.String.Ref (+ "Get_Max_Height"),
       Get_Mouse_X           => Mssyst.String.Ref (+ "Get_Mouse_X"),

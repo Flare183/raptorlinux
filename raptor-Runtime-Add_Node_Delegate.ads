@@ -54,5 +54,5 @@ private
    pragma Import(MSIL,Invoke,"Invoke");
 end raptor.Runtime.Add_Node_Delegate;
 pragma Import(MSIL,raptor.Runtime.Add_Node_Delegate,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Runtime/Add_Node_Delegate");

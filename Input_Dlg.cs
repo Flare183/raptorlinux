@@ -34,9 +34,7 @@ namespace raptor
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		private System.ComponentModel.Container components = null;
-		private System.Windows.Forms.RadioButton radioButtonText;
-		private System.Windows.Forms.RadioButton radioButtonExpression;
+        private System.ComponentModel.Container components = null;
         private RichTextBox suggestionTextBox;
         private Visual_Flow_Form the_form;
 		public Input_Dlg(Parallelogram Parent_Parallelogram, Visual_Flow_Form form)
@@ -51,23 +49,11 @@ namespace raptor
 
 			if ((PAR.Text!=null) && (PAR.Text.CompareTo("")!=0))
 			{
-				if (PAR.input_is_expression)
-				{
-					this.radioButtonExpression.Checked=true;
-					// replace all "" with "
-					// replace all \" with "
-				}
-				else
-				{
-					this.radioButtonText.Checked=true;
-				}
+
 				this.exprTextBox.Text = PAR.prompt;
 				this.variableTextBox.Text = PAR.Text;
 			}
-			else
-			{
-				this.radioButtonText.Checked=true;
-			}
+
 			this.examplesLabel.Text = "Examples:" + '\n' + "   Coins" + 
 				'\n' + "   Board[3,3]";
 			this.labelGraphics = errorLabel.CreateGraphics();
@@ -107,28 +93,26 @@ namespace raptor
             this.label3 = new System.Windows.Forms.Label();
             this.done_button = new System.Windows.Forms.Button();
             this.errorLabel = new System.Windows.Forms.Label();
-            this.radioButtonText = new System.Windows.Forms.RadioButton();
-            this.radioButtonExpression = new System.Windows.Forms.RadioButton();
             this.suggestionTextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // examplesLabel
             // 
-            this.examplesLabel.Location = new System.Drawing.Point(40, 168);
+            this.examplesLabel.Location = new System.Drawing.Point(40, 145);
             this.examplesLabel.Name = "examplesLabel";
             this.examplesLabel.Size = new System.Drawing.Size(216, 40);
             this.examplesLabel.TabIndex = 0;
             // 
             // variableTextBox
             // 
-            this.variableTextBox.Location = new System.Drawing.Point(48, 216);
+            this.variableTextBox.Location = new System.Drawing.Point(48, 193);
             this.variableTextBox.Name = "variableTextBox";
             this.variableTextBox.Size = new System.Drawing.Size(208, 20);
             this.variableTextBox.TabIndex = 5;
             this.variableTextBox.WordWrap = false;
-            this.variableTextBox.Enter += new System.EventHandler(this.variableTextBox_TextChanged);
             this.variableTextBox.TextChanged += new System.EventHandler(this.variableTextBox_TextChanged);
             this.variableTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Check_key);
+            this.variableTextBox.Enter += new System.EventHandler(this.variableTextBox_TextChanged);
             // 
             // label2
             // 
@@ -141,19 +125,19 @@ namespace raptor
             // 
             // exprTextBox
             // 
-            this.exprTextBox.Location = new System.Drawing.Point(48, 56);
+            this.exprTextBox.Location = new System.Drawing.Point(48, 33);
             this.exprTextBox.Multiline = true;
             this.exprTextBox.Name = "exprTextBox";
             this.exprTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.exprTextBox.Size = new System.Drawing.Size(208, 72);
             this.exprTextBox.TabIndex = 3;
-            this.exprTextBox.Enter += new System.EventHandler(this.textBox2_TextChanged);
             this.exprTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             this.exprTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Check_key_expr);
+            this.exprTextBox.Enter += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(48, 144);
+            this.label3.Location = new System.Drawing.Point(48, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(208, 16);
             this.label3.TabIndex = 6;
@@ -162,7 +146,7 @@ namespace raptor
             // 
             // done_button
             // 
-            this.done_button.Location = new System.Drawing.Point(120, 438);
+            this.done_button.Location = new System.Drawing.Point(120, 415);
             this.done_button.Name = "done_button";
             this.done_button.Size = new System.Drawing.Size(64, 24);
             this.done_button.TabIndex = 7;
@@ -172,31 +156,15 @@ namespace raptor
             // errorLabel
             // 
             this.errorLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.errorLabel.Location = new System.Drawing.Point(16, 256);
+            this.errorLabel.Location = new System.Drawing.Point(16, 233);
             this.errorLabel.Name = "errorLabel";
             this.errorLabel.Size = new System.Drawing.Size(264, 48);
             this.errorLabel.TabIndex = 8;
             // 
-            // radioButtonText
-            // 
-            this.radioButtonText.Location = new System.Drawing.Point(176, 32);
-            this.radioButtonText.Name = "radioButtonText";
-            this.radioButtonText.Size = new System.Drawing.Size(80, 24);
-            this.radioButtonText.TabIndex = 10;
-            this.radioButtonText.Text = "&Text";
-            // 
-            // radioButtonExpression
-            // 
-            this.radioButtonExpression.Location = new System.Drawing.Point(56, 32);
-            this.radioButtonExpression.Name = "radioButtonExpression";
-            this.radioButtonExpression.Size = new System.Drawing.Size(88, 24);
-            this.radioButtonExpression.TabIndex = 9;
-            this.radioButtonExpression.Text = "&Expression";
-            // 
             // suggestionTextBox
             // 
             this.suggestionTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.suggestionTextBox.Location = new System.Drawing.Point(8, 320);
+            this.suggestionTextBox.Location = new System.Drawing.Point(8, 297);
             this.suggestionTextBox.Name = "suggestionTextBox";
             this.suggestionTextBox.Size = new System.Drawing.Size(272, 96);
             this.suggestionTextBox.TabIndex = 11;
@@ -205,10 +173,8 @@ namespace raptor
             // Input_Dlg
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(299, 476);
+            this.ClientSize = new System.Drawing.Size(299, 448);
             this.Controls.Add(this.suggestionTextBox);
-            this.Controls.Add(this.radioButtonText);
-            this.Controls.Add(this.radioButtonExpression);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.done_button);
             this.Controls.Add(this.label3);
@@ -231,28 +197,18 @@ namespace raptor
 		{
 			result = interpreter_pkg.input_syntax(this.variableTextBox.Text,PAR);
 			
-			if (this.radioButtonExpression.Checked)
-			{
-				prompt_result = interpreter_pkg.output_syntax(this.exprTextBox.Text,false,PAR);
-			}
-   
+   		    prompt_result = interpreter_pkg.output_syntax(this.exprTextBox.Text,false,PAR);
+			
 		    PAR.is_input = true;			    
 				
-			if (result.valid && (this.radioButtonText.Checked || prompt_result.valid))
+			if (result.valid && prompt_result.valid)
 			{
 				the_form.Make_Undoable();
 				PAR.prompt = this.exprTextBox.Text;
 				PAR.Text = this.variableTextBox.Text;
 				PAR.parse_tree = result.tree;
-				if (this.radioButtonExpression.Checked)
-				{
-					PAR.prompt_tree = prompt_result.tree;
-					PAR.input_is_expression = true;
-				}
-				else
-				{
-					PAR.input_is_expression = false;
-				}
+				PAR.prompt_tree = prompt_result.tree;
+				PAR.input_is_expression = true;
 				PAR.changed();
 				this.error = false;
 				this.Close();
@@ -354,14 +310,7 @@ namespace raptor
         {
             if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
             {
-                if (this.radioButtonExpression.Checked)
-                {
-                    e.Handled = this.Complete_Suggestion_Expr();
-                }
-                else
-                {
-                    e.Handled = false;
-                }
+                e.Handled = this.Complete_Suggestion_Expr();
                 e.SuppressKeyPress = e.Handled;
                 if (!e.Handled)
                 {
@@ -403,8 +352,6 @@ namespace raptor
 				exprTextBox.Text = exprTextBox.Lines[0]+exprTextBox.Lines[1];
 				exprTextBox.Select(exprTextBox.Text.Length,0);
 			}
-            if (radioButtonExpression.Checked)
-            {
                 Dialog_Helpers.Check_Hint(
                     this.exprTextBox,
                     this.suggestionTextBox,
@@ -413,11 +360,6 @@ namespace raptor
                     ref this.suggestion_result_expr,
                     ref this.error,
                     this.Font);
-            }
-            else
-            {
-                this.suggestionTextBox.Hide();
-            }
             this.Invalidate();
 		}
 

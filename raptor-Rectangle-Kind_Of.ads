@@ -56,5 +56,5 @@ private
    pragma Import(MSIL,ToString,"ToString");
 end raptor.Rectangle.Kind_Of;
 pragma Import(MSIL,raptor.Rectangle.Kind_Of,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Rectangle/Kind_Of");

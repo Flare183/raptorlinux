@@ -58,5 +58,5 @@ private
    pragma Import(MSIL,ToString,"ToString");
 end raptor.Runtime.Parameter_Kind;
 pragma Import(MSIL,raptor.Runtime.Parameter_Kind,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Runtime/Parameter_Kind");

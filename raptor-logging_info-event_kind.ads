@@ -66,5 +66,5 @@ private
    pragma Import(MSIL,ToString,"ToString");
 end raptor.logging_info.event_kind;
 pragma Import(MSIL,raptor.logging_info.event_kind,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.logging_info/event_kind");

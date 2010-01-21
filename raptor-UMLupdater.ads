@@ -76,5 +76,5 @@ private
    pragma Import(MSIL,renameMethod,"renameMethod");
 end raptor.UMLupdater;
 pragma Import(MSIL,raptor.UMLupdater,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.UMLupdater");

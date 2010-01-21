@@ -51,6 +51,8 @@ package body Lexer is
       (Clear_Console => 0,
       Delay_For => 1,
       Draw_Bitmap => 5,
+      Redirect_Output_Append => 1,
+      Set_Precision => 1,
       Redirect_Input => 1,
       Redirect_Output => 1,
       Clear_Window => 1,

@@ -42,5 +42,5 @@ private
    pragma Import(MSIL,Top,"Top");
 end raptor.CallStack;
 pragma Import(MSIL,raptor.CallStack,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.CallStack");

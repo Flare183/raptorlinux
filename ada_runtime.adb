@@ -21,6 +21,15 @@ package body Ada_Runtime is
       end if;
    end Redirect_Output;
 
+   procedure Redirect_Output_Append(V : Numbers.Value) is
+   begin
+      if Numbers.Is_String(V) then
+         Raptor.Runtime.Redirect_Output_Append(Filename => Numbers.String_Of(V));
+      else
+         Raptor.Runtime.Redirect_Output_Append(Yes_Or_No => Numbers.Integer_Of(v));
+      end if;
+   end Redirect_Output_Append;
+
 
    procedure Redirect_Standard_Input is
    begin

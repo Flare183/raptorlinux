@@ -119,5 +119,5 @@ private
    pragma Import(MSIL,Union,"Union");
 end raptor.CommentBox;
 pragma Import(MSIL,raptor.CommentBox,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.CommentBox");

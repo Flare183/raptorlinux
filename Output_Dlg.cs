@@ -151,7 +151,7 @@ namespace raptor
             // Output_Dlg
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(288, 386);
+            this.ClientSize = new System.Drawing.Size(288, 435);
             this.Controls.Add(this.suggestionTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.new_line);

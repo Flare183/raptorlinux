@@ -110,5 +110,5 @@ private
    pragma Import(MSIL,Total_Minutes,"Total_Minutes");
 end raptor.logging_info;
 pragma Import(MSIL,raptor.logging_info,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.logging_info");

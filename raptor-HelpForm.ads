@@ -123,5 +123,5 @@ private
    pragma MSIL_Constructor(new_HelpForm);
 end raptor.HelpForm;
 pragma Import(MSIL,raptor.HelpForm,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.HelpForm");

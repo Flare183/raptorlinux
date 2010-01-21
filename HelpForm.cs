@@ -20,8 +20,8 @@ namespace raptor
         // MAKE SURE TO build release and then RUN UPDATEVERSION.BAT to recompile interpreter.dll
         // WHEN YOU CHANGE THIS!! (or build debug, then toada.bat, then recompiler interpreter.dll)
             // then to create new installer, build release (again), then build installer
-        public const string Version_String = "4.0.1.0001";
-        public const string Date = "17 November 2009";
+        public const string Version_String = "4.0.2.0003";
+        public const string Date = "8 January 2010";
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;

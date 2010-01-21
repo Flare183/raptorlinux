@@ -125,5 +125,5 @@ private
    pragma Import(MSIL,mnuSelectAll_Click,"mnuSelectAll_Click");
 end raptor.UMLDiagram;
 pragma Import(MSIL,raptor.UMLDiagram,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.UMLDiagram");

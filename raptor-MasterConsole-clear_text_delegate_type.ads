@@ -53,5 +53,5 @@ private
    pragma Import(MSIL,Invoke,"Invoke");
 end raptor.MasterConsole.clear_text_delegate_type;
 pragma Import(MSIL,raptor.MasterConsole.clear_text_delegate_type,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.MasterConsole/clear_text_delegate_type");

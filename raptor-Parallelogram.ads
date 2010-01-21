@@ -107,5 +107,5 @@ private
    pragma Import(MSIL,wide_footprint,"wide_footprint");
 end raptor.Parallelogram;
 pragma Import(MSIL,raptor.Parallelogram,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Parallelogram");

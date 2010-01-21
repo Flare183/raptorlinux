@@ -190,5 +190,5 @@ private
    pragma Import(MSIL,setText,"setText");
 end raptor.IF_Control;
 pragma Import(MSIL,raptor.IF_Control,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.IF_Control");

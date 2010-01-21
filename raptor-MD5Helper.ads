@@ -31,5 +31,5 @@ private
    pragma Import(MSIL,ComputeHash,"ComputeHash");
 end raptor.MD5Helper;
 pragma Import(MSIL,raptor.MD5Helper,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.MD5Helper");

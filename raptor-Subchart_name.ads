@@ -124,5 +124,5 @@ private
    pragma Import(MSIL,RunDialog,"RunDialog");
 end raptor.Subchart_name;
 pragma Import(MSIL,raptor.Subchart_name,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Subchart_name");

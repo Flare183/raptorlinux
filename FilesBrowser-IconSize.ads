@@ -55,5 +55,5 @@ private
    pragma Import(MSIL,ToString,"ToString");
 end FilesBrowser.IconSize;
 pragma Import(MSIL,FilesBrowser.IconSize,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]FilesBrowser.IconSize");

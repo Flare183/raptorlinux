@@ -11,6 +11,19 @@ with Ada.Strings.Maps;
 with ada.characters.conversions;
 
 package body Numbers is
+   Precision_Set : Boolean := False;
+   Precision : Integer := 4;
+
+   procedure Set_Precision(I : in Integer) is
+   begin
+      if I<0 then
+         Precision_Set := False;
+      else
+         Precision_Set := True;
+         Precision := I;
+      end if;
+   end Set_Precision;
+
    function Integer_Image(I : in Integer) return String is
       S : constant String := Integer'Image(I);
    begin
@@ -22,13 +35,16 @@ package body Numbers is
       G : Long_Float := F;
       Aft : Natural := 4;
    begin
-      loop
-         exit when Aft=14;
-         g := g * 10.0;
-         exit when abs(G)>1.0;
-         Aft := Aft + 1;
-      end loop;
-
+      if Precision_Set then
+         Aft := Precision;
+      else
+         loop
+            exit when Aft=14;
+            g := g * 10.0;
+            exit when abs(G)>1.0;
+            Aft := Aft + 1;
+         end loop;
+      end if;
       Ada.Long_Float_Text_Io.Put(
          Item => F,
          Aft  => Aft,

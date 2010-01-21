@@ -155,5 +155,5 @@ private
    pragma Import(MSIL,initialize,"initialize");
 end raptor.PensBrushes;
 pragma Import(MSIL,raptor.PensBrushes,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.PensBrushes");

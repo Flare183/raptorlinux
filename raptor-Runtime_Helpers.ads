@@ -34,5 +34,5 @@ private
    pragma Import(MSIL,Set_Value_String,"Set_Value_String");
 end raptor.Runtime_Helpers;
 pragma Import(MSIL,raptor.Runtime_Helpers,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Runtime_Helpers");

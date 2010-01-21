@@ -41,7 +41,7 @@ package Lexer is
       -- regular procedures no params
       Clear_Console,
       -- regular procedures with params
-      Delay_For, Redirect_Input, Redirect_Output,
+      Delay_For, Redirect_Output_Append, Set_Precision, Redirect_Input, Redirect_Output,
       -- adagraph procedures
       Clear_Window,Display_Number,Display_Text,Draw_Arc,
       -- adagraph procs of 0 params

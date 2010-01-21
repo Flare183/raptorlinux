@@ -45,5 +45,5 @@ private
    pragma MSIL_Constructor(new_Clipboard_Data);
 end raptor.Clipboard_Data;
 pragma Import(MSIL,raptor.Clipboard_Data,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Clipboard_Data");

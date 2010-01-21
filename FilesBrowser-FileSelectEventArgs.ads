@@ -33,5 +33,5 @@ private
    pragma Import(MSIL,set_FileName,"set_FileName");
 end FilesBrowser.FileSelectEventArgs;
 pragma Import(MSIL,FilesBrowser.FileSelectEventArgs,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]FilesBrowser.FileSelectEventArgs");

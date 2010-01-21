@@ -219,5 +219,5 @@ private
    pragma Import(MSIL,set_text_delegate,"set_text_delegate");
 end raptor.MasterConsole;
 pragma Import(MSIL,raptor.MasterConsole,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.MasterConsole");

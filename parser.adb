@@ -789,6 +789,20 @@ package body Parser is
       end if;
    end Parse_Parameter_List;
 
+   -- Input_Statement => Input End_Input
+   function Parse_Input_Statement return Input_Pointer is
+      Result : Input_Pointer := Parse_Input;
+      T : Token_Pointer;
+   begin
+      T := Get_Token;
+      if T.Kind /= End_Input then
+         Raise_Exception(T,
+            Token_Type'Image(T.Kind) &
+             " is unexpected");
+      end if;
+      return Result;
+   end Parse_Input_Statement;
+
    -- Output_Statement => Output End_Input
    function Parse_Output_Statement(New_Line : Boolean) return Output_Pointer is
       Result : Output_Pointer := Parse_Output(New_Line);

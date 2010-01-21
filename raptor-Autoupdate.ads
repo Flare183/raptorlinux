@@ -31,5 +31,5 @@ private
    pragma Import(MSIL,Autoupdate_Requested,"Autoupdate_Requested");
 end raptor.Autoupdate;
 pragma Import(MSIL,raptor.Autoupdate,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Autoupdate");

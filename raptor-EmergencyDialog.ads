@@ -119,5 +119,5 @@ private
    pragma MSIL_Constructor(new_EmergencyDialog);
 end raptor.EmergencyDialog;
 pragma Import(MSIL,raptor.EmergencyDialog,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.EmergencyDialog");

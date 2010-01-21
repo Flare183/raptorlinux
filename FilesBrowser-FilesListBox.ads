@@ -168,5 +168,5 @@ private
    pragma Import(MSIL,set_ShowDirectories,"set_ShowDirectories");
 end FilesBrowser.FilesListBox;
 pragma Import(MSIL,FilesBrowser.FilesListBox,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]FilesBrowser.FilesListBox");

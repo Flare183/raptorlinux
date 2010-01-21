@@ -36,5 +36,5 @@ private
    pragma Import(MSIL,Write,"Write");
 end raptor.Registry_Settings;
 pragma Import(MSIL,raptor.Registry_Settings,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Registry_Settings");

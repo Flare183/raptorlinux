@@ -135,8 +135,12 @@ package raptor.Runtime is
    procedure Redirect_Input(
       yes_or_no : Integer);
    procedure Redirect_Output(
-      filename : access MSSyst.String.Typ'Class);
+      yes_or_no : Integer);
    procedure Redirect_Output(
+      filename : access MSSyst.String.Typ'Class);
+   procedure Redirect_Output_Append(
+      filename : access MSSyst.String.Typ'Class);
+   procedure Redirect_Output_Append(
       yes_or_no : Integer);
    procedure Set_Running(
       sc : access raptor.Procedure_Chart.Typ'Class);
@@ -205,6 +209,7 @@ private
    pragma Import(MSIL,promptDialog,"promptDialog");
    pragma Import(MSIL,Redirect_Input,"Redirect_Input");
    pragma Import(MSIL,Redirect_Output,"Redirect_Output");
+   pragma Import(MSIL,Redirect_Output_Append,"Redirect_Output_Append");
    pragma Import(MSIL,Set_Running,"Set_Running");
    pragma Import(MSIL,set2DArrayElement,"set2DArrayElement");
    pragma Import(MSIL,setArrayElement,"setArrayElement");
@@ -214,5 +219,5 @@ private
    pragma Import(MSIL,updateWatchBox,"updateWatchBox");
 end raptor.Runtime;
 pragma Import(MSIL,raptor.Runtime,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Runtime");

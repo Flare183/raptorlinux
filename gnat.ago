@@ -5,16 +5,16 @@ interpreter
 DOTNET_APPLICATION
 
 
+parse_output_statement
+output_syntax
+unexpected
+id is
+redirect_output_append
+delay_for
 is_number
 set_expression
 set_expression_
 statement_syntax
-Expr_Assignment
-Assignment
-indent
-param_msuffix
-param_list
-proc_call
 -- Begin compiler switches
 DEBUG <- active (current) build mode
 TRUE <- are gcc/gnatmake/main/target-dir of Release := these from Debug mode ?

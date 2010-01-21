@@ -90,7 +90,14 @@ namespace raptor
         }
         public static IDataObject GetDataObject()
         {
-            return clipboard_data;
+            if (Component.MONO)
+            {
+                return clipboard_data;
+            }
+            else
+            {
+                return Clipboard.GetDataObject();
+            }
         }
     }
 }

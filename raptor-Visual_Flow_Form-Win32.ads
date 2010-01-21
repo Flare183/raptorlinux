@@ -43,5 +43,5 @@ private
    pragma Import(MSIL,SetClipboardData,"SetClipboardData");
 end raptor.Visual_Flow_Form.Win32;
 pragma Import(MSIL,raptor.Visual_Flow_Form.Win32,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Visual_Flow_Form/Win32");

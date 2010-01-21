@@ -126,5 +126,5 @@ private
    pragma MSIL_Constructor(new_Control_Dlg);
 end raptor.Control_Dlg;
 pragma Import(MSIL,raptor.Control_Dlg,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Control_Dlg");

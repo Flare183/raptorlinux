@@ -72,5 +72,5 @@ private
    pragma Import(MSIL,suggestions_uparrow,"suggestions_uparrow");
 end raptor.Dialog_Helpers;
 pragma Import(MSIL,raptor.Dialog_Helpers,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Dialog_Helpers");

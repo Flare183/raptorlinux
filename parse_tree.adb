@@ -380,6 +380,9 @@ package body Parse_Tree is
          when Lexer.Delay_For =>
             delay Duration(Numbers.Long_Float_Of(
                   Check_Parameter_Number (This.Param_List.Parameter)));
+         when Lexer.Set_Precision =>
+            Numbers.Set_Precision(Numbers.Integer_Of(
+               Check_Parameter_Number(This.Param_List.Parameter)));
          when Lexer.Redirect_Input =>
             if This.Param_List.Parameter.All in String_Output'Class then
                Raptor.Runtime.Redirect_Input(
@@ -395,6 +398,21 @@ package body Parse_Tree is
                exception
                   when e:others =>
                      Raptor.Runtime.Redirect_Input(
+                        Check_Parameter_String (This.Param_List.Parameter));
+               end;
+            end if;
+         when Lexer.Redirect_Output_Append =>
+            if This.Param_List.Parameter.All in String_Output'Class then
+               Raptor.Runtime.Redirect_Output(
+                  Check_Parameter_String (This.Param_List.Parameter));
+            else
+               begin
+                  Raptor.Runtime.Redirect_Output_Append(
+                     Numbers.Integer_Of(
+                        Check_Parameter_Number (This.Param_List.Parameter)));
+               exception
+                  when others =>
+                     Raptor.Runtime.Redirect_Output_Append(
                         Check_Parameter_String (This.Param_List.Parameter));
                end;
             end if;
@@ -1794,6 +1812,13 @@ package body Parse_Tree is
             null;
          when Lexer.To_Character =>
             null;
+         when Lexer.Redirect_Output_Append =>
+            Gen.Emit_Method(
+               Package_K => "ada_runtime_pkg",
+               Name      => "redirect_output_append");
+         when Lexer.Set_Precision=>
+            Gen.Emit_Method(+"numbers_pkg",
+               +"set_precision");
          when Lexer.Redirect_Input =>
             Gen.Emit_Method(
                Package_K => "ada_runtime_pkg",
@@ -2137,7 +2162,12 @@ package body Parse_Tree is
                Emit_Parameter_Number(This.Param_List.Parameter,Gen);
             end if;
             Gen.Emit_Last_Parameter(O);
-         when Lexer.Redirect_Output =>
+         when Lexer.Set_Precision=>
+            Gen.Emit_Conversion(Conversions'Pos(To_Integer));
+            Emit_Parameter_Number(This.Param_List.Parameter,Gen);
+            Gen.Emit_End_Conversion(Conversions'Pos(To_Integer));
+            Gen.Emit_Last_Parameter(O);
+         when Lexer.Redirect_Output|Lexer.Redirect_Output_Append =>
             if This.Param_List.Parameter.All in String_Output'Class then
                Emit_Parameter_String(This.Param_List.Parameter,Gen);
             else
@@ -3102,11 +3132,13 @@ package body Parse_Tree is
       Kind : Lexer.Proc_Token_Types := This.Id.Kind;
    begin
       case Kind is
-         when Lexer.Delay_For =>
+        when Lexer.Delay_For =>
             Compile_Pass1(This.Param_List.Parameter.all,Gen);
-         when Lexer.Redirect_Input =>
+        when Lexer.Set_Precision =>
+            Compile_Pass1(This.Param_List.Parameter.All,Gen);
+        when Lexer.Redirect_Input =>
             Compile_Pass1(This.Param_List.Parameter.all,Gen);
-         when Lexer.Redirect_Output =>
+        when Lexer.Redirect_Output|Lexer.Redirect_Output_Append =>
             Compile_Pass1(This.Param_List.Parameter.all,Gen);
         when Lexer.Clear_Console =>
             null;

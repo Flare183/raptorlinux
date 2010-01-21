@@ -49,7 +49,9 @@ package Parser is
    function Parse_Output_Statement(New_Line : in Boolean) return Output_Pointer;
    -- Output => Expression|String
    function Parse_Output(New_Line : in Boolean) return Output_Pointer;
-   -- Input => Lhs LSuffix End_Input
+   -- Input => Input End_Input
+   function Parse_Input_Statement return Input_Pointer;
+   -- Input => Lhs LSuffix
    function Parse_Input return Input_Pointer;
    -- Parameter_List => Output [, Parameter_List | Lambda]
    function Parse_Parameter_List(

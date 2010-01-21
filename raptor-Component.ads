@@ -168,11 +168,11 @@ package raptor.Component is
       gen : access generate_interface.Typ'Class);
    function contains(
       This : access Typ;
-      rec : MSSyst.Drawing.Rectangle.Valuetype) return Standard.Boolean;
-   function contains(
-      This : access Typ;
       x : Integer;
       y : Integer) return Standard.Boolean;
+   function contains(
+      This : access Typ;
+      rec : MSSyst.Drawing.Rectangle.Valuetype) return Standard.Boolean;
    function copy(
       This : access Typ;
       VF : access raptor.Visual_Flow_Form.Typ'Class) return Standard.Boolean;
@@ -209,11 +209,13 @@ package raptor.Component is
    procedure footprint(
       This : access Typ;
       gr : access MSSyst.Drawing.Graphics.Typ'Class);
+   function get_assignmentSymbol return Wide_Character;
    function get_CL(
       This : access Typ) return Integer;
    function get_current_serialization_version return Integer;
    function get_H(
       This : access Typ) return Integer;
+   function get_MONO return Standard.Boolean;
    function get_Name(
       This : access Typ) return access MSSyst.String.Typ'Class;
    function get_reverse_loop_logic return Standard.Boolean;
@@ -357,9 +359,11 @@ private
    pragma Import(MSIL,find_selection_end,"find_selection_end");
    pragma Import(MSIL,First_Of,"First_Of");
    pragma Import(MSIL,footprint,"footprint");
+   pragma Import(MSIL,get_assignmentSymbol,"get_assignmentSymbol");
    pragma Import(MSIL,get_CL,"get_CL");
    pragma Import(MSIL,get_current_serialization_version,"get_current_serialization_version");
    pragma Import(MSIL,get_H,"get_H");
+   pragma Import(MSIL,get_MONO,"get_MONO");
    pragma Import(MSIL,get_Name,"get_Name");
    pragma Import(MSIL,get_reverse_loop_logic,"get_reverse_loop_logic");
    pragma Import(MSIL,get_selected,"get_selected");
@@ -401,5 +405,5 @@ private
    pragma Import(MSIL,wide_footprint,"wide_footprint");
 end raptor.Component;
 pragma Import(MSIL,raptor.Component,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Component");

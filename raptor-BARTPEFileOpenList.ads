@@ -124,5 +124,5 @@ private
    pragma Import(MSIL,View_HD,"View_HD");
 end raptor.BARTPEFileOpenList;
 pragma Import(MSIL,raptor.BARTPEFileOpenList,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.BARTPEFileOpenList");

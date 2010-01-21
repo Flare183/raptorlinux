@@ -125,5 +125,5 @@ private
    pragma MSIL_Constructor(new_Call_Dialog);
 end raptor.Call_Dialog;
 pragma Import(MSIL,raptor.Call_Dialog,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Call_Dialog");

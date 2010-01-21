@@ -53,5 +53,5 @@ private
    pragma Import(MSIL,Invoke,"Invoke");
 end raptor.PromptForm.Kill_Delegate_Type;
 pragma Import(MSIL,raptor.PromptForm.Kill_Delegate_Type,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.PromptForm/Kill_Delegate_Type");

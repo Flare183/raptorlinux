@@ -51,5 +51,5 @@ private
    pragma Import(MSIL,Invoke,"Invoke");
 end raptor.Runtime.Delete_Scope_Delegate;
 pragma Import(MSIL,raptor.Runtime.Delete_Scope_Delegate,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Runtime/Delete_Scope_Delegate");

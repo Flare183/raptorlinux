@@ -19,5 +19,5 @@ package FilesBrowser.IconExtractor.SHFILEINFO is
 private
 end FilesBrowser.IconExtractor.SHFILEINFO;
 pragma Import(MSIL,FilesBrowser.IconExtractor.SHFILEINFO,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]FilesBrowser.IconExtractor/SHFILEINFO");

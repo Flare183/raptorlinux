@@ -93,5 +93,5 @@ private
    pragma Import(MSIL,wide_footprint,"wide_footprint");
 end raptor.Oval_Return;
 pragma Import(MSIL,raptor.Oval_Return,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.Oval_Return");

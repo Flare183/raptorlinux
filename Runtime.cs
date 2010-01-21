@@ -1801,6 +1801,13 @@ namespace raptor
         private delegate string Redirect_Output_Delegate_Type();
         private static Redirect_Output_Delegate_Type redirect_output_delegate =
             new Redirect_Output_Delegate_Type(Redirect_Output_Static);
+        private static bool am_appending = false;
+        public static void Redirect_Output_Append(int yes_or_no)
+        {
+            am_appending = true;
+            Redirect_Output(yes_or_no);
+        }
+		
         public static void Redirect_Output(int yes_or_no)
 		{
 			if (raptor_files_pkg.network_is_redirected ||
@@ -1830,15 +1837,22 @@ namespace raptor
 				}
 			}
 		}
-
+        public static void Redirect_Output_Append(string filename)
+        {
+            am_appending = true;
+            Redirect_Output(filename);
+        }
 		public static void Redirect_Output(string filename)
 		{
+            bool append = am_appending;
+            am_appending = false;
+
 			if (raptor_files_pkg.network_is_redirected ||
 				Visual_Flow_Form.command_line_output_redirect)
 			{
 				return;
 			}
-			raptor_files_pkg.redirect_output(filename);
+			raptor_files_pkg.redirect_output(filename,append);
 		}
         public static void Set_Running(Procedure_Chart sc)
         {

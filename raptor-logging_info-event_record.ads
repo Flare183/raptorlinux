@@ -38,5 +38,5 @@ private
    pragma MSIL_Constructor(new_event_record);
 end raptor.logging_info.event_record;
 pragma Import(MSIL,raptor.logging_info.event_record,
-   ".ver 4:0:0:17",
+   ".ver 4:0:2:3",
    "[raptor]raptor.logging_info/event_record");
