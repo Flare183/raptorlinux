@@ -3,28 +3,12 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="CSharp/CSharpMethod.cs" ctype="Workbench">
-    <Files>
-      <File FileName="GUI/Dialogs/OptionsDialog.cs" Line="30" Column="37" />
-      <File FileName="EmergencyDialog.cs" Line="16" Column="26" />
-      <File FileName="Visual_Flow_Form.cs" Line="139" Column="27" />
-      <File FileName="Core/SerializeEventArgsBinary.cs" Line="19" Column="1" />
-      <File FileName="CSharp/CSharpMethod.cs" Line="298" Column="47" />
-    </Files>
+  <MonoDevelop.Ide.Workbench ctype="Workbench">
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Core" expanded="True" selected="True" />
-          <Node name="CSharp" expanded="True" />
-          <Node name="GUI" expanded="True">
-            <Node name="References" expanded="True" />
-            <Node name="Dialogs" expanded="True">
-              <Node name="OptionsDialog.cs" expanded="True" />
-            </Node>
-          </Node>
-          <Node name="raptor" expanded="True">
-            <Node name="References" expanded="True" />
-          </Node>
+          <Node name="BigInteger" expanded="True" />
+          <Node name="raptor" expanded="True" />
         </State>
       </Pad>
       <Pad Id="ClassPad">
