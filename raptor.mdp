@@ -73,53 +73,6 @@
     <File name="composition.png" subtype="Code" buildaction="Exclude" />
     <File name="COPY.BMP" subtype="Code" buildaction="Exclude" />
     <File name="CUT.BMP" subtype="Code" buildaction="Exclude" />
-    <File name="GUI/Resources/aggregation1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/align_bottom1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/align_horizontal1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/align_left1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/align_right1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/align_top1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/align_vertical1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/association1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/auto_layout1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/auto_zoom1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/class1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/code_generator1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/collapse_all1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/comment1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/composition1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/cut1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/delegate1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/delete1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/dependency1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/diagram_size1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/enum1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/expand_all1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/format1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/generalization1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/help1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/image1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/interface1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/mail1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/nesting1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/new_document1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/new_entity1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/note1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/open1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/options1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/paste1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/print1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/print_preview1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/print_setup1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/realization1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/redo1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/save1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/search_web1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/struct1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/undo1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/web1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/zoom_in1.png" subtype="Code" buildaction="Nothing" />
-    <File name="GUI/Resources/zoom_out1.png" subtype="Code" buildaction="Nothing" />
     <File name="Help/About_Raptorgraph.htm" subtype="Code" buildaction="Exclude" />
     <File name="Help/ARC2.BMP" subtype="Code" buildaction="Exclude" />
     <File name="Help/ARC3.BMP" subtype="Code" buildaction="Exclude" />

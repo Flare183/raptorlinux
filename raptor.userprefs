@@ -7,7 +7,6 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="BigInteger" expanded="True" />
           <Node name="raptor" expanded="True" />
         </State>
       </Pad>
