@@ -3,19 +3,22 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="dotnetgraph/dotnetgraph.cs" ctype="Workbench">
+    <Files>
+      <File FileName="dotnetgraph/dotnetgraph.cs" Line="11" Column="2" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="raptor" expanded="True" />
+          <Node name="dotnetgraph" expanded="True">
+            <Node name="dotnetgraph.cs" expanded="True" selected="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">
-        <State expanded="True">
+        <State expanded="True" selected="True">
           <Node name="raptor" expanded="True">
-            <Node name="raptor" expanded="True">
-              <Node name="raptor.VerifyTestingEnvironment" selected="True" />
-            </Node>
+            <Node name="raptor" expanded="True" />
           </Node>
         </State>
       </Pad>
