@@ -376,7 +376,7 @@
     <ProjectReference type="Assembly" localcopy="True" specificVersion="False" refto="dll_files/mgnatcs.dll" />
     <ProjectReference type="Assembly" localcopy="True" specificVersion="False" refto="dll_files/Plugins_PlaySound.dll" />
     <ProjectReference type="Assembly" localcopy="True" specificVersion="False" refto="dll_files/microsoft.ink.dll" />
-    <ProjectReference type="Assembly" localcopy="True" specificVersion="False" refto="dll_files/CodeProjectComBigIntegerPackage.dll" />
+    <ProjectReference type="Project" localcopy="True" refto="BigInteger" />
   </References>
   <LanguageParameters StartupObject="raptor.Visual_Flow_Form" ApplicationIcon="App.ico" CodePage="65001" ctype="CSharpProjectParameters" />
 </Project>

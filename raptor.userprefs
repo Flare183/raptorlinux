@@ -1,26 +1,27 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" ctype="Workspace" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="dotnetgraph/dotnetgraph.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Generators.cs" ctype="Workbench">
     <Files>
-      <File FileName="dotnetgraph/dotnetgraph.cs" Line="11" Column="2" />
+      <File FileName="Generators.cs" Line="72" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="dotnetgraph" expanded="True">
-            <Node name="dotnetgraph.cs" expanded="True" selected="True" />
+          <Node name="BigInteger" expanded="True">
+            <Option id="ShowVersionControlOverlays" value="True" />
+            <Option id="ShowAllFiles" value="True" />
+          </Node>
+          <Node name="CodeGenerator" expanded="True" />
+          <Node name="raptor" expanded="True">
+            <Node name="suggestions.adb" selected="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">
-        <State expanded="True" selected="True">
-          <Node name="raptor" expanded="True">
-            <Node name="raptor" expanded="True" />
-          </Node>
-        </State>
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

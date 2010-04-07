@@ -1,0 +1,19 @@
+project Raptorlinux is
+
+   for Source_Dirs use ("/home/jesse/Programming/Mono_Projects/raptorlinux/");
+   for Object_Dir use "/home/jesse/Programming/Mono_Projects/raptorlinux/obj";
+
+   package Builder is
+      for Default_Switches ("Ada") use ("-g");
+   end Builder;
+
+   package Compiler is
+      for Default_Switches ("Ada") use ("-g");
+   end Compiler;
+
+   package Binder is
+      for Default_Switches ("Ada") use ("-g");
+   end Binder;
+
+end Raptorlinux;
+
