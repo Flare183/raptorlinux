@@ -3,25 +3,30 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Generators.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assembly Browser" ctype="Workbench">
     <Files>
       <File FileName="Generators.cs" Line="72" Column="26" />
+      <File FileName="Registry_Settings.cs" Line="1" Column="1" />
+      <File FileName="Runtime.cs" Line="1" Column="1" />
+      <File FileName="Assembly Browser" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="BigInteger" expanded="True">
+          <Node name="BigInteger">
             <Option id="ShowVersionControlOverlays" value="True" />
             <Option id="ShowAllFiles" value="True" />
           </Node>
-          <Node name="CodeGenerator" expanded="True" />
+          <Node name="dotnetgraph" expanded="True" />
           <Node name="raptor" expanded="True">
-            <Node name="suggestions.adb" selected="True" />
+            <Node name="References" expanded="True">
+              <Node name="/home/jesse/Programming/Mono_Projects/raptorlinux/dll_files/interpreter.dll" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">
-        <State />
+        <State selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

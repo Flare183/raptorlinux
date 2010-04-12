@@ -1,0 +1,5 @@
+C:\d\My Documents\Visual Studio 2008\Projects\raptor\pluginsTime\bin\Release\pluginsTime.dll
+C:\d\My Documents\Visual Studio 2008\Projects\raptor\pluginsTime\bin\Release\pluginsTime.pdb
+C:\d\My Documents\Visual Studio 2008\Projects\raptor\pluginsTime\obj\Release\ResolveAssemblyReference.cache
+C:\d\My Documents\Visual Studio 2008\Projects\raptor\pluginsTime\obj\Release\pluginsTime.dll
+C:\d\My Documents\Visual Studio 2008\Projects\raptor\pluginsTime\obj\Release\pluginsTime.pdb

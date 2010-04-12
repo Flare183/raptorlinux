@@ -1,26 +1,26 @@
-<Project releaseversion="0.1" name="dotnetgraph" fileversion="2.0" language="C#" DefaultNamespace="dotnetgraph" Configuration="Debug" Platform="AnyCPU" AssemblyName="dotnetgraph" SccProjectName="" SccLocalPath="" SccAuxPath="" SccProvider="" FileUpgradeFlags="" OldToolsVersion="2.0" UpgradeBackupLocation="" PublishUrl="publish\" Install="true" InstallFrom="Disk" UpdateEnabled="false" UpdateMode="Foreground" UpdateInterval="7" UpdateIntervalUnits="Days" UpdatePeriodically="false" UpdateRequired="false" MapFileExtensions="true" ApplicationRevision="0" ApplicationVersion="1.0.0.%2a" IsWebBootstrapper="false" UseApplicationTrust="false" BootstrapperEnabled="true" targetFramework="3.5" ctype="DotNetProject">
+<Project name="dotnetgraph" fileversion="2.0" DefaultNamespace="dotnetgraph" language="C#" releaseversion="0.1" Configuration="Debug" Platform="AnyCPU" AssemblyName="dotnetgraph" SccProjectName="" SccLocalPath="" SccAuxPath="" SccProvider="" FileUpgradeFlags="" OldToolsVersion="2.0" UpgradeBackupLocation="" PublishUrl="publish\" Install="true" InstallFrom="Disk" UpdateEnabled="false" UpdateMode="Foreground" UpdateInterval="7" UpdateIntervalUnits="Days" UpdatePeriodically="false" UpdateRequired="false" MapFileExtensions="true" ApplicationRevision="0" ApplicationVersion="1.0.0.%2a" IsWebBootstrapper="false" UseApplicationTrust="false" BootstrapperEnabled="true" targetFramework="2.0" ctype="DotNetProject">
   <Configurations active="Debug">
     <Configuration name="Debug" Optimize="false" DefineConstants="DEBUG;TRACE" WarningLevel="4" ctype="DotNetProjectConfiguration">
       <Output directory="bin/Debug/" assembly="dotnetgraph" />
       <Build debugmode="True" target="Library" />
-      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <Execution consolepause="True" runwithwarnings="True" runtime="MsNet" />
       <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
     </Configuration>
     <Configuration name="Release" Optimize="true" DefineConstants="TRACE" WarningLevel="4" ctype="DotNetProjectConfiguration">
       <Output directory="bin/Release/" assembly="dotnetgraph" />
       <Build debugmode="False" target="Library" />
-      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" />
+      <Execution consolepause="True" runwithwarnings="True" runtime="MsNet" />
       <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" definesymbols="TRACE" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
     </Configuration>
   </Configurations>
   <Contents>
-    <File name="dotnetgraph.cs" subtype="Code" contentType="Form" buildaction="Compile" />
-    <File name="dotnetgraph.designer.cs" subtype="Code" buildaction="Compile" dependson="/home/jesse/Mono_Projects/raptor/dotnetgraph/dotnetgraph.cs" />
-    <File name="Properties/AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
-    <File name="dotnetgraph.resx" subtype="Code" contentType="Designer" buildaction="EmbedAsResource" dependson="/home/jesse/Mono_Projects/raptor/dotnetgraph/dotnetgraph.cs" resource_id="dotnetgraphlibrary.dotnetgraph.resources" />
-    <File name="Microsoft.Net.Framework.2.0" subtype="Code" buildaction="BootstrapperPackage" visible="False" />
-    <File name="Microsoft.Net.Framework.3.0" subtype="Code" buildaction="BootstrapperPackage" visible="False" />
-    <File name="Microsoft.Net.Framework.3.5" subtype="Code" buildaction="BootstrapperPackage" visible="False" />
+    <File subtype="Code" buildaction="Compile" name="dotnetgraph.cs" contentType="Form" />
+    <File subtype="Code" buildaction="Compile" name="dotnetgraph.designer.cs" dependson="/home/jesse/Mono_Projects/raptor/dotnetgraph/dotnetgraph.cs" />
+    <File subtype="Code" buildaction="Compile" name="Properties/AssemblyInfo.cs" />
+    <File subtype="Code" buildaction="EmbedAsResource" name="dotnetgraph.resx" contentType="Designer" dependson="/home/jesse/Mono_Projects/raptor/dotnetgraph/dotnetgraph.cs" resource_id="dotnetgraphlibrary.dotnetgraph.resources" />
+    <File subtype="Code" buildaction="BootstrapperPackage" name="Microsoft.Net.Framework.2.0" visible="False" />
+    <File subtype="Code" buildaction="BootstrapperPackage" name="Microsoft.Net.Framework.3.0" visible="False" />
+    <File subtype="Code" buildaction="BootstrapperPackage" name="Microsoft.Net.Framework.3.5" visible="False" />
   </Contents>
   <References>
     <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
