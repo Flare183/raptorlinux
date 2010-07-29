@@ -43,13 +43,13 @@
 # Makefile Parameters that You *Must* Set #
 ###########################################
 
-BUILD_DIR = c:/d/rsrch/a\#/mgnat
-DLL_DIR = c:/d/rsrch/a\#/mgnat/dll
-DLL_DOS_DIR = c:\d\rsrch\a\#\mgnat\dll
+BUILD_DIR = /home/jesse/Programming/Mono_Projects/raptorlinux/mgnat
+DLL_DIR = /home/jesse/Programming/Mono_Projects/raptorlinux/mgnat/dll
+#DLL_DOS_DIR = c:\d\rsrch\a\#\mgnat\dll
 # Directory inside which the MGNAT build is to take place. See the section
 # on "MGNAT Build Directory Organization" below.
 
-GNAT_DIR = c:/d/rsrch/a\#/mgnat/src
+GNAT_DIR = /home/jesse/Programming/Mono_Projects/raptorlinux/mgnat/src
 # Directory containing the GNAT sources
 
 ################################
@@ -59,7 +59,7 @@ GNAT_DIR = c:/d/rsrch/a\#/mgnat/src
 MGNAT_DIR = $(GNAT_DIR)
 # Directory containing the Ada, C and Java sources specific to MGNAT
 
-INSTALL_BASE = c:
+INSTALL_BASE = /
 # Directory where the MGNAT release is to be installed. If empty "/" is used.
 
 #############################
