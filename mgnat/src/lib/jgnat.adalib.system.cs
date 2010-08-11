@@ -1,2 +1,0 @@
-namespace mgnat.adalib.system {
-}
