@@ -3,20 +3,13 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assembly Browser" ctype="Workbench">
-    <Files>
-      <File FileName="Assembly Browser" />
-    </Files>
+  <MonoDevelop.Ide.Workbench ctype="Workbench">
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="BigInteger">
-            <Option id="ShowVersionControlOverlays" value="True" />
-            <Option id="ShowAllFiles" value="True" />
-          </Node>
           <Node name="raptor" expanded="True">
             <Node name="References" expanded="True">
-              <Node name="/home/jesse/Programming/Mono_Projects/raptorlinux/dll_files/interpreter.dll" selected="True" />
+              <Node name="interpreter, Version=0.0.0.0, Culture=neutral" selected="True" />
             </Node>
           </Node>
         </State>
