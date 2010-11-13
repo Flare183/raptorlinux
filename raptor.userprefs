@@ -3,14 +3,18 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmergencyDialog.cs" ctype="Workbench">
+    <Files>
+      <File FileName="EmergencyDialog.cs" Line="16" Column="61" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
+          <Node name="BigInteger" expanded="True" selected="True">
+            <Node name="References" expanded="True" />
+          </Node>
           <Node name="raptor" expanded="True">
-            <Node name="References" expanded="True">
-              <Node name="interpreter, Version=0.0.0.0, Culture=neutral" selected="True" />
-            </Node>
+            <Node name="References" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -19,4 +23,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
 </Properties>
